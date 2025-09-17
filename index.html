@@ -1,246 +1,1059 @@
-<!DOCTYPE html><!-- Handled by Exflow.site --><html data-wf-page="678fef3c81e293bbfb483a87" data-wf-site="678fef3c81e293bbfb483a1b"><head><meta charset="utf-8"/><title>Closure Lite - Webflow HTML website template</title><meta content="Streamline your workflow with Closure. Organize tasks, collaborate seamlessly, set deadlines, and gain valuable insights to boost productivity. Get started for free today!" name="description"/><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="Webflow" name="generator"/><link href="css/webflow-style.css" rel="stylesheet" type="text/css"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"/><script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script><script type="text/javascript">WebFont.load({  google: {    families: ["Inter Tight:300,regular,500,600","Space Grotesk:600,700","Manrope:regular,600"]  }});</script><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="images/favicon.png" rel="shortcut icon" type="image/x-icon"/><link href="images/app-icon.png" rel="apple-touch-icon"/><!-- Keep this css code to improve the font quality-->
-<style>
-  * {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -o-font-smoothing: antialiased;
-  -webkit-appearance:none;
-}
-</style></head><body><div class="page-wrapper"><div class="global-styles w-embed"><style>
+<!DOCTYPE html><!-- Handled by Exflow.site -->
+<html data-wf-page="678fef3c81e293bbfb483a87" data-wf-site="678fef3c81e293bbfb483a1b">
 
-/* Ensure all elements inherit the color from its parent */
-body * {
-    color: inherit;
-}
-
-a,
-.w-input,
-.w-select,
-.w-tab-link,
-.w-nav-link,
-.w-slider-arrow-left,
-.w-slider-arrow-right,
-.w-dropdown-btn,
-.w-dropdown-toggle,
-.w-dropdown-link {
-  color: inherit;
-  text-decoration: inherit;
-  font-size: inherit;
-}
-
-/* Focus state style for keyboard navigation for the focusable elements */
-*[tabindex]:focus-visible,
-  input[type="file"]:focus-visible {
-   outline: 0.125rem solid #4d65ff;
-   outline-offset: 0.125rem;
-}
-
-/* Get rid of top margin on first element in any rich text element */
-.w-richtext > :not(div):first-child, .w-richtext > div:first-child > :first-child {
-  margin-top: 0 !important;
-}
-
-/* Get rid of bottom margin on last element in any rich text element */
-.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
-	margin-bottom: 0 !important;
-}
-
-/* Prevent all click and hover interaction with an element */
-.pointer-events-off {
-	pointer-events: none;
-}
-
-/* Enables all click and hover interaction with an element */
-.pointer-events-on {
-  pointer-events: auto;
-}
-
-/* Create a class of .div-square which maintains a 1:1 dimension of a div */
-.div-square::after {
-	content: "";
-	display: block;
-	padding-bottom: 100%;
-}
-
-/* Make sure containers never lose their center alignment */
-.container-medium,.container-small, .container-large {
-	margin-right: auto !important;
-  margin-left: auto !important;
-}
-
-
-/* Apply "..." after 3 lines of text */
-.text-style-3lines {
-	display: -webkit-box;
-	overflow: hidden;
-	-webkit-line-clamp: 3;
-	-webkit-box-orient: vertical;
-}
-
-/* Apply "..." after 2 lines of text */
-.text-style-2lines {
-	display: -webkit-box;
-	overflow: hidden;
-	-webkit-line-clamp: 2;
-	-webkit-box-orient: vertical;
-}
-
-/* Adds inline flex display */
-.display-inlineflex {
-  display: inline-flex;
-}
-
-/* These classes are never overwritten */
-.hide {
-  display: none !important;
-}
-
-@media screen and (max-width: 991px) {
-    .hide, .hide-tablet {
-        display: none !important;
+<head>
+  <meta charset="utf-8" />
+  <title>Closure Lite - Webflow HTML website template</title>
+  <meta
+    content="Streamline your workflow with Closure. Organize tasks, collaborate seamlessly, set deadlines, and gain valuable insights to boost productivity. Get started for free today!"
+    name="description" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="Webflow" name="generator" />
+  <link href="css/webflow-style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script
+    type="text/javascript">WebFont.load({ google: { families: ["Inter Tight:300,regular,500,600", "Space Grotesk:600,700", "Manrope:regular,600"] } });</script>
+  <script
+    type="text/javascript">!function (o, c) { var n = c.documentElement, t = " w-mod-"; n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch") }(window, document);</script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+  <link href="images/app-icon.png" rel="apple-touch-icon" /><!-- Keep this css code to improve the font quality-->
+  <style>
+    * {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      -o-font-smoothing: antialiased;
+      -webkit-appearance: none;
     }
-}
-  @media screen and (max-width: 767px) {
-    .hide-mobile-landscape{
-      display: none !important;
-    }
-}
-  @media screen and (max-width: 479px) {
-    .hide-mobile{
-      display: none !important;
-    }
-}
- 
-.margin-0 {
-  margin: 0rem !important;
-}
-  
-.padding-0 {
-  padding: 0rem !important;
-}
+  </style>
+</head>
 
-.spacing-clean {
-padding: 0rem !important;
-margin: 0rem !important;
-}
+<body>
+  <div class="page-wrapper">
+    <div class="global-styles w-embed">
+      <style>
+        /* Ensure all elements inherit the color from its parent */
+        body * {
+          color: inherit;
+        }
 
-.margin-top {
-  margin-right: 0rem !important;
-  margin-bottom: 0rem !important;
-  margin-left: 0rem !important;
-}
+        a,
+        .w-input,
+        .w-select,
+        .w-tab-link,
+        .w-nav-link,
+        .w-slider-arrow-left,
+        .w-slider-arrow-right,
+        .w-dropdown-btn,
+        .w-dropdown-toggle,
+        .w-dropdown-link {
+          color: inherit;
+          text-decoration: inherit;
+          font-size: inherit;
+        }
 
-.padding-top {
-  padding-right: 0rem !important;
-  padding-bottom: 0rem !important;
-  padding-left: 0rem !important;
-}
-  
-.margin-right {
-  margin-top: 0rem !important;
-  margin-bottom: 0rem !important;
-  margin-left: 0rem !important;
-}
+        /* Focus state style for keyboard navigation for the focusable elements */
+        *[tabindex]:focus-visible,
+        input[type="file"]:focus-visible {
+          outline: 0.125rem solid #4d65ff;
+          outline-offset: 0.125rem;
+        }
 
-.padding-right {
-  padding-top: 0rem !important;
-  padding-bottom: 0rem !important;
-  padding-left: 0rem !important;
-}
+        /* Get rid of top margin on first element in any rich text element */
+        .w-richtext> :not(div):first-child,
+        .w-richtext>div:first-child> :first-child {
+          margin-top: 0 !important;
+        }
 
-.margin-bottom {
-  margin-top: 0rem !important;
-  margin-right: 0rem !important;
-  margin-left: 0rem !important;
-}
+        /* Get rid of bottom margin on last element in any rich text element */
+        .w-richtext>:last-child,
+        .w-richtext ol li:last-child,
+        .w-richtext ul li:last-child {
+          margin-bottom: 0 !important;
+        }
 
-.padding-bottom {
-  padding-top: 0rem !important;
-  padding-right: 0rem !important;
-  padding-left: 0rem !important;
-}
+        /* Prevent all click and hover interaction with an element */
+        .pointer-events-off {
+          pointer-events: none;
+        }
 
-.margin-left {
-  margin-top: 0rem !important;
-  margin-right: 0rem !important;
-  margin-bottom: 0rem !important;
-}
-  
-.padding-left {
-  padding-top: 0rem !important;
-  padding-right: 0rem !important;
-  padding-bottom: 0rem !important;
-}
-  
-.margin-horizontal {
-  margin-top: 0rem !important;
-  margin-bottom: 0rem !important;
-}
+        /* Enables all click and hover interaction with an element */
+        .pointer-events-on {
+          pointer-events: auto;
+        }
 
-.padding-horizontal {
-  padding-top: 0rem !important;
-  padding-bottom: 0rem !important;
-}
+        /* Create a class of .div-square which maintains a 1:1 dimension of a div */
+        .div-square::after {
+          content: "";
+          display: block;
+          padding-bottom: 100%;
+        }
 
-.margin-vertical {
-  margin-right: 0rem !important;
-  margin-left: 0rem !important;
-}
-  
-.padding-vertical {
-  padding-right: 0rem !important;
-  padding-left: 0rem !important;
-}
+        /* Make sure containers never lose their center alignment */
+        .container-medium,
+        .container-small,
+        .container-large {
+          margin-right: auto !important;
+          margin-left: auto !important;
+        }
 
-/* Apply "..." at 100% width */
-.truncate-width { 
-		width: 100%; 
-    white-space: nowrap; 
-    overflow: hidden; 
-    text-overflow: ellipsis; 
-}
-/* Removes native scrollbar */
-.no-scrollbar {
-    -ms-overflow-style: none;
-    overflow: -moz-scrollbars-none; 
-}
 
-.no-scrollbar::-webkit-scrollbar {
-    display: none;
-}
+        /* Apply "..." after 3 lines of text */
+        .text-style-3lines {
+          display: -webkit-box;
+          overflow: hidden;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+        }
 
-</style></div><main class="main-wrapper"><div data-animation="default" class="navbar-component w-nav" data-easing2="ease" fs-scrolldisable-element="smart-nav" data-easing="ease" data-collapse="medium" data-w-id="4225229a-491a-3b6a-39f8-75c47326ce39" role="banner" data-duration="400"><div class="navbar-container"><a href="#Home" class="navbar-logo-link w-nav-brand"><img loading="lazy" src="images/frame-20187.svg" alt="" class="navbar-logo"/></a><nav role="navigation" id="w-node-_4225229a-491a-3b6a-39f8-75c47326ce3d-fb483a87" class="navbar-menu is-page-height-tablet w-nav-menu"><a href="#Services" class="navbar-link w-nav-link">Services</a><a href="#Team" class="navbar-link w-nav-link">Team</a><a href="#Testimonials" class="navbar-link w-nav-link">Testimonials</a><a href="#FAQs" class="navbar-link w-nav-link">FAQs</a></nav><div id="w-node-_4225229a-491a-3b6a-39f8-75c47326ce50-fb483a87" class="navbar-button-wrapper"><div class="button-group"><a href="#" class="button is-secondary is-small w-button">Log In</a><a href="#Contact" class="button is-small w-button">Contact</a></div><div class="navbar-menu-button w-nav-button"><div class="menu-icon"><div class="menu-icon-line-top"></div><div class="menu-icon-line-middle"><div class="menu-icon-line-middle-inner"></div></div><div class="menu-icon-line-bottom"></div></div></div></div></div></div><header id="Home" class="hero-section"><div class="padding-global"><div class="container-large"><div class="padding-section-large"><div class="hero-component"><div class="w-layout-grid hero-content"><div class="hero-content-left"><div class="top-content"><h1 data-w-id="f76e041d-af60-0268-1cf5-2f7097b6ffbc" style="opacity:0" class="heading-style-h1">Turn Complexity Into Clarity With a Click</h1><div class="spacer-small"></div><p data-w-id="f76e041d-af60-0268-1cf5-2f7097b6ffbf" style="opacity:0" class="text-size-medium hero">Build stronger workflows with a system designed to keep your team focused and your projects on track.</p><div class="spacer-medium"></div><div data-w-id="f76e041d-af60-0268-1cf5-2f7097b6ffc2" style="opacity:0" class="button-group"><a href="#Contact" class="button w-button">Free Consultation</a><a href="#Services" class="button is-secondary w-button">Learn More</a></div></div><div data-w-id="536e5f7f-6f05-a07e-f346-a6227790c57a" style="opacity:0" class="trusted-content"><div class="trusted-images-wrapper"><div class="truted-image-wrapper"><img src="images/rectangle-2028.png" loading="lazy" alt="" class="trusted-image"/></div><div class="truted-image-wrapper negative-gap"><img src="images/rectangle-2027.png" loading="lazy" alt="" class="trusted-image"/></div><div class="truted-image-wrapper negative-gap"><img src="images/rectangle-2031.png" loading="lazy" alt="" class="trusted-image"/></div><div class="truted-image-wrapper negative-gap"><img src="images/rectangle-2028.png" loading="lazy" alt="" class="trusted-image"/></div><div class="truted-image-wrapper negative-gap"><img src="images/rectangle-2031.png" loading="lazy" alt="" class="trusted-image"/></div><div class="truted-image-wrapper negative-gap"><img src="images/rectangle-2030.png" loading="lazy" alt="" class="trusted-image"/></div></div><div class="right-content"><div class="testimonial-rating-wrapper"><div class="testimonial-rating-icon"><div class="icon-embed-xsmall star w-embed"><svg width="100%" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M8.16379 0.551109C8.47316 -0.183704 9.52684 -0.183703 9.83621 0.551111L11.6621 4.88811C11.7926 5.19789 12.0875 5.40955 12.426 5.43636L17.1654 5.81173C17.9684 5.87533 18.294 6.86532 17.6822 7.38306L14.0713 10.4388C13.8134 10.6571 13.7007 10.9996 13.7795 11.3259L14.8827 15.8949C15.0696 16.669 14.2172 17.2809 13.5297 16.8661L9.47208 14.4176C9.18225 14.2427 8.81775 14.2427 8.52793 14.4176L4.47029 16.8661C3.7828 17.2809 2.93036 16.669 3.11727 15.8949L4.22048 11.3259C4.29928 10.9996 4.18664 10.6571 3.92873 10.4388L0.317756 7.38306C-0.294046 6.86532 0.0315611 5.87533 0.834562 5.81173L5.57402 5.43636C5.91255 5.40955 6.20744 5.19789 6.33786 4.88811L8.16379 0.551109Z" fill="currentColor"/>
-</svg></div></div><div class="testimonial-rating-icon"><div class="icon-embed-xsmall star w-embed"><svg width="100%" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M8.16379 0.551109C8.47316 -0.183704 9.52684 -0.183703 9.83621 0.551111L11.6621 4.88811C11.7926 5.19789 12.0875 5.40955 12.426 5.43636L17.1654 5.81173C17.9684 5.87533 18.294 6.86532 17.6822 7.38306L14.0713 10.4388C13.8134 10.6571 13.7007 10.9996 13.7795 11.3259L14.8827 15.8949C15.0696 16.669 14.2172 17.2809 13.5297 16.8661L9.47208 14.4176C9.18225 14.2427 8.81775 14.2427 8.52793 14.4176L4.47029 16.8661C3.7828 17.2809 2.93036 16.669 3.11727 15.8949L4.22048 11.3259C4.29928 10.9996 4.18664 10.6571 3.92873 10.4388L0.317756 7.38306C-0.294046 6.86532 0.0315611 5.87533 0.834562 5.81173L5.57402 5.43636C5.91255 5.40955 6.20744 5.19789 6.33786 4.88811L8.16379 0.551109Z" fill="currentColor"/>
-</svg></div></div><div class="testimonial-rating-icon"><div class="icon-embed-xsmall star w-embed"><svg width="100%" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M8.16379 0.551109C8.47316 -0.183704 9.52684 -0.183703 9.83621 0.551111L11.6621 4.88811C11.7926 5.19789 12.0875 5.40955 12.426 5.43636L17.1654 5.81173C17.9684 5.87533 18.294 6.86532 17.6822 7.38306L14.0713 10.4388C13.8134 10.6571 13.7007 10.9996 13.7795 11.3259L14.8827 15.8949C15.0696 16.669 14.2172 17.2809 13.5297 16.8661L9.47208 14.4176C9.18225 14.2427 8.81775 14.2427 8.52793 14.4176L4.47029 16.8661C3.7828 17.2809 2.93036 16.669 3.11727 15.8949L4.22048 11.3259C4.29928 10.9996 4.18664 10.6571 3.92873 10.4388L0.317756 7.38306C-0.294046 6.86532 0.0315611 5.87533 0.834562 5.81173L5.57402 5.43636C5.91255 5.40955 6.20744 5.19789 6.33786 4.88811L8.16379 0.551109Z" fill="currentColor"/>
-</svg></div></div><div class="testimonial-rating-icon"><div class="icon-embed-xsmall star w-embed"><svg width="100%" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M8.16379 0.551109C8.47316 -0.183704 9.52684 -0.183703 9.83621 0.551111L11.6621 4.88811C11.7926 5.19789 12.0875 5.40955 12.426 5.43636L17.1654 5.81173C17.9684 5.87533 18.294 6.86532 17.6822 7.38306L14.0713 10.4388C13.8134 10.6571 13.7007 10.9996 13.7795 11.3259L14.8827 15.8949C15.0696 16.669 14.2172 17.2809 13.5297 16.8661L9.47208 14.4176C9.18225 14.2427 8.81775 14.2427 8.52793 14.4176L4.47029 16.8661C3.7828 17.2809 2.93036 16.669 3.11727 15.8949L4.22048 11.3259C4.29928 10.9996 4.18664 10.6571 3.92873 10.4388L0.317756 7.38306C-0.294046 6.86532 0.0315611 5.87533 0.834562 5.81173L5.57402 5.43636C5.91255 5.40955 6.20744 5.19789 6.33786 4.88811L8.16379 0.551109Z" fill="currentColor"/>
-</svg></div></div><div class="testimonial-rating-icon"><div class="icon-embed-xsmall star w-embed"><svg width="100%" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M8.16379 0.551109C8.47316 -0.183704 9.52684 -0.183703 9.83621 0.551111L11.6621 4.88811C11.7926 5.19789 12.0875 5.40955 12.426 5.43636L17.1654 5.81173C17.9684 5.87533 18.294 6.86532 17.6822 7.38306L14.0713 10.4388C13.8134 10.6571 13.7007 10.9996 13.7795 11.3259L14.8827 15.8949C15.0696 16.669 14.2172 17.2809 13.5297 16.8661L9.47208 14.4176C9.18225 14.2427 8.81775 14.2427 8.52793 14.4176L4.47029 16.8661C3.7828 17.2809 2.93036 16.669 3.11727 15.8949L4.22048 11.3259C4.29928 10.9996 4.18664 10.6571 3.92873 10.4388L0.317756 7.38306C-0.294046 6.86532 0.0315611 5.87533 0.834562 5.81173L5.57402 5.43636C5.91255 5.40955 6.20744 5.19789 6.33786 4.88811L8.16379 0.551109Z" fill="currentColor"/>
-</svg></div></div></div><div class="text-block">Trusted by Over 2,000 Clients</div></div></div></div><div data-poster-url="images/4435249-uhd_3840_2160_25fps-20-281-29-poster-00001.jpg" data-video-urls="images/4435249-uhd_3840_2160_25fps-20-281-29-transcode.mp4,images/4435249-uhd_3840_2160_25fps-20-281-29-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" data-w-id="2249a4f7-5baf-08bb-9fff-09ffb9eaa47d" style="opacity:0" class="background-video-2 w-background-video w-background-video-atom"><video id="2249a4f7-5baf-08bb-9fff-09ffb9eaa47d-video" autoplay="" loop="" style="background-image:url(&quot;images/4435249-uhd_3840_2160_25fps-20-281-29-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover"><source src="images/4435249-uhd_3840_2160_25fps-20-281-29-transcode.mp4" data-wf-ignore="true"/><source src="images/4435249-uhd_3840_2160_25fps-20-281-29-transcode.webm" data-wf-ignore="true"/></video></div></div></div></div></div></div></header><section class="logo-section"><div class="padding-global"><div class="container-large"><div class="padding-section-medium"><div class="logo-component"><div class="logo-content"><div class="text-align-center"><div class="max-width-large align-center"><h2 data-w-id="05e94905-820e-756d-52c0-ffda1171b259" style="opacity:0" class="heading-style-h6">Used by the world&#x27;s leading companies</h2></div></div><div class="spacer-large"></div><div class="w-layout-grid logo-list"><div id="w-node-_05e94905-820e-756d-52c0-ffda1171b25d-fb483a87" class="logo-wrapper"><img loading="lazy" src="images/logo.svg" alt="" class="logo"/></div><div id="w-node-_05e94905-820e-756d-52c0-ffda1171b25f-fb483a87" class="logo-wrapper"><img loading="lazy" src="images/logo-1.svg" alt="" class="logo"/></div><div id="w-node-_05e94905-820e-756d-52c0-ffda1171b261-fb483a87" class="logo-wrapper"><img loading="lazy" src="images/logo-2.svg" alt="" class="logo"/></div><div id="w-node-_05e94905-820e-756d-52c0-ffda1171b263-fb483a87" class="logo-wrapper"><img loading="lazy" src="images/logo-3.svg" alt="" class="logo"/></div><div id="w-node-_05e94905-820e-756d-52c0-ffda1171b265-fb483a87" class="logo-wrapper"><img loading="lazy" src="images/logo-3.svg" alt="" class="logo"/></div><div id="w-node-_05e94905-820e-756d-52c0-ffda1171b267-fb483a87" class="logo-wrapper"><img loading="lazy" src="images/logo-2.svg" alt="" class="logo"/></div><div id="w-node-_7a107b69-0177-d333-144c-3556a8b40e6e-fb483a87" class="logo-wrapper"><img loading="lazy" src="images/logo-1.svg" alt="" class="logo"/></div><div id="w-node-b95f2560-bafd-2c8f-b0ec-3752de116217-fb483a87" class="logo-wrapper"><img loading="lazy" src="images/logo.svg" alt="" class="logo"/></div></div></div></div></div></div></div></section><section id="Services" class="services-section background-color-alternative"><div class="padding-global"><div class="container-large"><div class="padding-section-large"><div class="services-component"><div class="services-content"><div class="services-inner-wrapper"><div data-w-id="a22d96a7-2c47-06d5-702a-4bf040b09fc1" style="opacity:0" class="services-header"><div class="text-style-tagline">Services</div><div class="spacer-xsmall"></div><h2 class="heading-style-h2">Tailored Solutions for Lasting Success</h2><div class="spacer-small"></div><p class="text-size-medium services">We simplify the complex, helping you streamline operations, scale smarter, and drive impact.</p></div><div data-duration-in="400" data-duration-out="200" data-current="Tab 3" data-easing="ease" class="services-tabs w-tabs"><div id="w-node-a22d96a7-2c47-06d5-702a-4bf040b09fcb-fb483a87" class="services-tabs-menu w-tab-menu"><a data-w-tab="Tab 1" id="w-node-a22d96a7-2c47-06d5-702a-4bf040b09fcc-fb483a87" class="services-tab-link w-inline-block w-tab-link"><h3 data-w-id="a22d96a7-2c47-06d5-702a-4bf040b09fcd" style="opacity:0" class="heading-style-h5">Market Analysis</h3></a><a data-w-tab="Tab 2" class="services-tab-link w-inline-block w-tab-link"><h3 data-w-id="a22d96a7-2c47-06d5-702a-4bf040b09fd4" style="opacity:0" class="heading-style-h5">Strategic Planning</h3></a><a data-w-tab="Tab 3" class="services-tab-link w-inline-block w-tab-link w--current"><h3 data-w-id="a22d96a7-2c47-06d5-702a-4bf040b09fdb" style="opacity:0" class="heading-style-h5">Business Optimization </h3></a></div><div class="services-tabs-content w-tab-content"><div data-w-tab="Tab 1" class="services-tab-pane w-tab-pane"><div class="services-image-wrapper"><img loading="lazy" src="images/linkedin-sales-solutions-vez9tsew7x8-unsplash.avif" alt="" class="services-image"/></div></div><div data-w-tab="Tab 2" class="services-tab-pane w-tab-pane"><div class="services-image-wrapper"><div data-poster-url="images/orange-20tech-20hd-20video-poster-00001.jpg" data-video-urls="images/orange-20tech-20hd-20video-transcode.mp4,https://cdn.prod.website-files.com/678fef3c81e293bbfb483a1b%2F67c12743f4d4d0071ed82c4f_Orange%20Tech%20HD%20Video-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video-3 w-background-video w-background-video-atom"><video id="cbcc8c0d-aebb-6a9b-4aa7-2fddfca730b4-video" autoplay="" loop="" style="background-image:url(&quot;images/orange-20tech-20hd-20video-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover"><source src="images/orange-20tech-20hd-20video-transcode.mp4" data-wf-ignore="true"/><source src="https://cdn.prod.website-files.com/678fef3c81e293bbfb483a1b%2F67c12743f4d4d0071ed82c4f_Orange%20Tech%20HD%20Video-transcode.webm" data-wf-ignore="true"/></video></div></div></div><div data-w-tab="Tab 3" class="services-tab-pane w-tab-pane w--tab-active"><div data-w-id="a22d96a7-2c47-06d5-702a-4bf040b09feb" style="opacity:0" class="services-image-wrapper"><img loading="lazy" src="images/futuristic-20background-20low-20poly-20-1-.avif" alt="" class="services-image"/></div></div></div></div></div></div></div></div></div></div></section><section class="stats-section text-color-alternate"><div class="padding-global"><div class="container-large"><div class="padding-section-large"><div class="stats-component"><div data-w-id="adb887fc-5c36-089b-e967-62d4a6c28679" style="opacity:0" class="max-width-large"><div class="text-style-tagline">Stats</div><div class="spacer-xsmall"></div><h2 class="heading-style-h2 stats">Proven Results That Drive Success</h2><div class="spacer-small"></div><p class="text-size-medium stats">We don’t just promise results—we deliver measurable improvements that enhance efficiency and growth.</p></div><div class="spacer-xxlarge"></div><div class="w-layout-grid stats-list"><div data-w-id="adb887fc-5c36-089b-e967-62d4a6c28684" style="opacity:0" class="stats-item"><div class="stats-number">80%</div><div class="spacer-xxsmall"></div><h3 class="heading-style-h6 stats">Faster Project Delivery</h3></div><div data-w-id="adb887fc-5c36-089b-e967-62d4a6c2868a" style="opacity:0" class="stats-item"><div class="stats-number">3X</div><div class="spacer-xxsmall"></div><h3 class="heading-style-h6 stats">Revenue Growth</h3></div><div data-w-id="adb887fc-5c36-089b-e967-62d4a6c28690" style="opacity:0" class="stats-item"><div class="stats-number">95%</div><div class="spacer-xxsmall"></div><h3 class="heading-style-h6 stats">Client Satisfaction Rate</h3></div></div><div class="spacer-xxlarge"></div><div data-w-id="adb887fc-5c36-089b-e967-62d4a6c28697" style="opacity:0" class="button-group"><a href="#Contact" class="button is-alternate w-button">Free Consultation</a></div></div></div></div></div><div class="stats-background-image-wrapper"><div class="image-overlay-layer"></div><div data-poster-url="https://cdn.prod.website-files.com/678fef3c81e293bbfb483a1b%2F67c1242ca9d3aa1c27cf91aa_4K%20Tech%20Video%2030fps-poster-00001.jpg" data-video-urls="https://cdn.prod.website-files.com/678fef3c81e293bbfb483a1b%2F67c1242ca9d3aa1c27cf91aa_4K%20Tech%20Video%2030fps-transcode.mp4,https://cdn.prod.website-files.com/678fef3c81e293bbfb483a1b%2F67c1242ca9d3aa1c27cf91aa_4K%20Tech%20Video%2030fps-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video-4 w-background-video w-background-video-atom"><video id="5d5c0a9f-2703-f2b6-d643-20723b9da1ba-video" autoplay="" loop="" style="background-image:url(&quot;https://cdn.prod.website-files.com/678fef3c81e293bbfb483a1b%2F67c1242ca9d3aa1c27cf91aa_4K%20Tech%20Video%2030fps-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover"><source src="https://cdn.prod.website-files.com/678fef3c81e293bbfb483a1b%2F67c1242ca9d3aa1c27cf91aa_4K%20Tech%20Video%2030fps-transcode.mp4" data-wf-ignore="true"/><source src="https://cdn.prod.website-files.com/678fef3c81e293bbfb483a1b%2F67c1242ca9d3aa1c27cf91aa_4K%20Tech%20Video%2030fps-transcode.webm" data-wf-ignore="true"/></video></div></div></section><section class="features-section"><div class="padding-global"><div class="container-large"><div class="padding-section-large"><div class="features-component"><div class="w-layout-grid features-content"><div data-w-id="8c8b2422-c467-420f-ed97-9018ecfc793b" style="opacity:0" class="features-image-wrapper"><img loading="lazy" src="images/cherrydeck-rmilc1piwm0-unsplash.avif" alt="" class="feature-image"/></div><div id="w-node-_8c8b2422-c467-420f-ed97-9018ecfc793d-fb483a87" class="features-content-right"><div data-w-id="2e676d94-3d22-420d-6e0e-42e70de0e062" style="opacity:0" class="content-wrapper"><h2 class="heading-style-h3 tempo">Transform Challenges Into Opportunities</h2><div class="spacer-small"></div><p class="text-size-medium features">Our approach ensures your team stays aligned, productive, and focused on what matters most.</p><div class="spacer-medium"></div><div class="button-group"><a href="#Contact" class="button w-button">Free Consultation</a><a href="#Services" class="button is-secondary w-button">Learn More</a></div></div><div class="w-layout-grid features-item-list"><div data-w-id="8c8b2422-c467-420f-ed97-9018ecfc7948" style="opacity:0" class="feature-item"><div class="feature-item-icon-wrapper"><img loading="lazy" src="images/frame.svg" alt="" class="icon-1x1-medium"/></div><div class="spacer-xsmall"></div><h3 class="heading-style-h6">Seamless Collaboration</h3><div class="spacer-xsmall"></div><p>Enhance team communication and coordination with structured workflows.</p></div><div data-w-id="8c8b2422-c467-420f-ed97-9018ecfc7951" style="opacity:0" class="feature-item"><div class="feature-item-icon-wrapper"><img loading="lazy" src="images/frame-1.svg" alt="" class="icon-1x1-medium"/></div><div class="spacer-xsmall"></div><h3 class="heading-style-h6">Scalable Growth</h3><div class="spacer-xsmall"></div><p>Build a foundation that grows with your business, ensuring long-term success.</p></div></div></div></div></div></div></div></div></section><section id="Testimonials" class="testimonial-section"><div class="padding-global"><div class="container-large"><div class="padding-section-large"><div class="testimonial-component"><div data-w-id="69333749-9634-0a01-7544-8866c323279f" style="opacity:0" class="w-layout-grid stats-content"><div data-w-id="69333749-9634-0a01-7544-8866c32327a0" style="opacity:0" class="stats-content-left"><div class="text-style-tagline">Testimonials</div><div class="spacer-small"></div><h2 class="heading-style-h3 test">Success Stories from Our Clients</h2></div><div data-w-id="69333749-9634-0a01-7544-8866c32327a3" style="opacity:0" class="stats-content-right"><p class="text-size-medium test">We take pride in helping businesses simplify workflows, increase efficiency, and scale effortlessly. See what our clients have to say.</p><div class="button-group test"><a href="#Contact" class="button w-button">Free Consultation</a><a href="#Services" class="button is-secondary w-button">Learn More</a></div></div></div><div class="spacer-xxlarge"></div><section data-w-id="f768ebe3-063e-f935-0ae2-294def27a43e" class="testimonial-cards-carousel"><div class="carousel-component"><div class="carousel-inner-wrapper"><div class="carousel-marquee"><div class="testimonial-card"><div class="testimonial-content-top"><div class="testimonial-logo-wrapper"><img loading="lazy" src="images/logo-1.svg" alt="" class="testimonial-logo"/></div><div class="spacer-large"></div><div class="text-size-medium">&quot;Managing multiple projects has never been easier. Closure is the best productivity tool we’ve used.&quot;</div><div class="spacer-small"></div><div class="testimonial-client"><div class="testimonial-client-image-wrapper"><img loading="lazy" src="images/frame-20189.png" alt="" class="testimonial-customer-image"/></div><div class="testimonial-client-info"><div class="text-weight-semibold">Michael Torres</div><div>Marketing Director at GrowthHive</div></div></div></div></div><div class="testimonial-card"><div class="testimonial-content-top"><div class="testimonial-logo-wrapper"><img loading="lazy" src="images/logo-1.svg" alt="" class="testimonial-logo"/></div><div class="spacer-large"></div><div class="text-size-medium">&quot;Closure completely transformed how our team collaborates. Task management is now seamless, and deadlines are always met!&quot;</div><div class="spacer-small"></div><div class="testimonial-client"><div class="testimonial-client-image-wrapper"><img sizes="(max-width: 1024px) 100vw, 1024px" srcset="images/uifaces-human-image-p-500.jpg 500w, images/uifaces-human-image-p-800.jpg 800w, images/uifaces-human-image.jpg 1024w" alt="" src="images/uifaces-human-image.jpg" loading="lazy" class="testimonial-customer-image"/></div><div class="testimonial-client-info"><div class="text-weight-semibold">James Carter</div><div>Project Manager</div></div></div></div></div><div class="testimonial-card"><div class="testimonial-content-top"><div class="testimonial-logo-wrapper"><img loading="lazy" src="images/logo-1.svg" alt="" class="testimonial-logo"/></div><div class="spacer-large"></div><div class="text-size-medium">&quot;An absolute game-changer! Our productivity has skyrocketed since switching to Closure.&quot;</div><div class="spacer-small"></div><div class="testimonial-client"><div class="testimonial-client-image-wrapper"><img sizes="(max-width: 1024px) 100vw, 1024px" srcset="images/uifaces-popular-image-p-500.jpg 500w, images/uifaces-popular-image-p-800.jpg 800w, images/uifaces-popular-image.jpg 1024w" alt="" src="images/uifaces-popular-image.jpg" loading="lazy" class="testimonial-customer-image"/></div><div class="testimonial-client-info"><div class="text-weight-semibold">Michael Thompson</div><div>CEO at TechNova</div></div></div></div></div></div><div class="carousel-marquee"><div class="testimonial-card"><div class="testimonial-content-top"><div class="testimonial-logo-wrapper"><img loading="lazy" src="images/logo-1.svg" alt="" class="testimonial-logo"/></div><div class="spacer-large"></div><div class="text-size-medium">&quot;I love how intuitive and efficient Closure is. It keeps our remote team aligned and focused.&quot;</div><div class="spacer-small"></div><div class="testimonial-client"><div class="testimonial-client-image-wrapper"><img loading="lazy" src="images/frame-20189.png" alt="" class="testimonial-customer-image"/></div><div class="testimonial-client-info"><div class="text-weight-semibold">Daniel Rodriguez</div><div>Operations Director</div></div></div></div></div><div class="testimonial-card"><div class="testimonial-content-top"><div class="testimonial-logo-wrapper"><img loading="lazy" src="images/logo-1.svg" alt="" class="testimonial-logo"/></div><div class="spacer-large"></div><div class="text-size-medium">&quot;The analytics and insights feature helps us track progress effortlessly. Highly recommend it!&quot;</div><div class="spacer-small"></div><div class="testimonial-client"><div class="testimonial-client-image-wrapper"><img sizes="(max-width: 1024px) 100vw, 1024px" srcset="images/uifaces-popular-image-20-1-p-500.jpg 500w, images/uifaces-popular-image-20-1-p-800.jpg 800w, images/uifaces-popular-image-20-1-.jpg 1024w" alt="" src="images/uifaces-popular-image-20-1-.jpg" loading="lazy" class="testimonial-customer-image"/></div><div class="testimonial-client-info"><div class="text-weight-semibold">Robert Mitchell</div><div>Business Consultant</div></div></div></div></div><div class="testimonial-card"><div class="testimonial-content-top"><div class="testimonial-logo-wrapper"><img loading="lazy" src="images/logo-1.svg" alt="" class="testimonial-logo"/></div><div class="spacer-large"></div><div class="text-size-medium">&quot;As a startup founder, I needed a simple yet powerful tool. Closure exceeded my expectations!&quot;</div><div class="spacer-small"></div><div class="testimonial-client"><div class="testimonial-client-image-wrapper"><img sizes="(max-width: 1024px) 100vw, 1024px" srcset="images/uifaces-human-image-p-500.jpg 500w, images/uifaces-human-image-p-800.jpg 800w, images/uifaces-human-image.jpg 1024w" alt="" src="images/uifaces-human-image.jpg" loading="lazy" class="testimonial-customer-image"/></div><div class="testimonial-client-info"><div class="text-weight-semibold">Ethan Walker</div><div>Founder of Bright Labs</div></div></div></div></div></div></div></div></section></div></div></div></div></section><section id="Team" class="team-section"><div class="padding-global"><div class="container-large"><div class="padding-section-large"><div class="team-component"><div data-w-id="0848d970-8105-87ef-bea3-f3c166abc597" style="opacity:0" class="max-width-large"><div class="text-style-tagline">Team</div><div class="spacer-xsmall"></div><h2 class="heading-style-h2">Your Partners in Business Excellence</h2><div class="spacer-small"></div><p class="text-size-medium team">With years of experience in strategy, operations, and business development, we’re here to take your company to the next level.</p></div><div class="spacer-xxlarge"></div><div data-delay="4000" data-animation="slide" class="team-slider w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="false"><div class="team-mask w-slider-mask"><div class="team-slide w-slide"><div class="team-item"><div class="team-image-wrapper"><img loading="lazy" src="images/placeholder-20image.png" alt="" class="team-image"/></div><div class="spacer-small"></div><div class="team-title-wrapper"><div class="text-size-large text-weight-semibold">Alexander Hayes</div><div class="text-size-medium">Business Development Manager</div></div><div class="spacer-xsmall"></div></div></div><div class="team-slide w-slide"><div class="team-item"><div class="team-image-wrapper"><img loading="lazy" src="images/placeholder-20image-1.png" alt="" class="team-image"/></div><div class="spacer-small"></div><div class="team-title-wrapper"><div class="text-size-large text-weight-semibold"><strong>Ryan Mitchell</strong></div><div class="text-size-medium">Senior Web Developer</div></div><div class="spacer-xsmall"></div></div></div><div class="team-slide w-slide"><div class="team-item"><div class="team-image-wrapper"><img loading="lazy" src="images/placeholder-20image-2.png" alt="" class="team-image"/></div><div class="spacer-small"></div><div class="team-title-wrapper"><div class="text-size-large text-weight-semibold">Ethan Sullivan</div><div class="text-size-medium">Lead UI/UX Designer</div></div><div class="spacer-xsmall"></div></div></div><div class="team-slide w-slide"><div class="team-item"><div class="team-image-wrapper"><img sizes="(max-width: 1024px) 100vw, 1024px" srcset="images/uifaces-popular-image-20-1-p-500.jpg 500w, images/uifaces-popular-image-20-1-p-800.jpg 800w, images/uifaces-popular-image-20-1-.jpg 1024w" alt="" src="images/uifaces-popular-image-20-1-.jpg" loading="lazy" class="team-image"/></div><div class="spacer-small"></div><div class="team-title-wrapper"><div class="text-size-large text-weight-semibold">Michael Bennett</div><div class="text-size-medium">Head of Marketing</div></div><div class="spacer-xsmall"></div></div></div><div class="team-slide w-slide"><div class="team-item"><div class="team-image-wrapper"><img sizes="(max-width: 1024px) 100vw, 1024px" srcset="images/uifaces-human-image-p-500.jpg 500w, images/uifaces-human-image-p-800.jpg 800w, images/uifaces-human-image.jpg 1024w" alt="" src="images/uifaces-human-image.jpg" loading="lazy" class="team-image"/></div><div class="spacer-small"></div><div class="team-title-wrapper"><div class="text-size-large text-weight-semibold">Daniel Reed</div><div class="text-size-medium">Chief Technology Officer (CTO)</div></div><div class="spacer-xsmall"></div></div></div><div class="team-slide w-slide"><div class="team-item"><div class="team-image-wrapper"><img sizes="(max-width: 1024px) 100vw, 1024px" srcset="images/uifaces-popular-image-p-500.jpg 500w, images/uifaces-popular-image-p-800.jpg 800w, images/uifaces-popular-image.jpg 1024w" alt="" src="images/uifaces-popular-image.jpg" loading="lazy" class="team-image"/></div><div class="spacer-small"></div><div class="team-title-wrapper"><div class="text-size-large text-weight-semibold">James Carter</div><div class="text-size-medium">Chief Executive Officer (CEO)</div></div><div class="spacer-xsmall"></div></div></div></div><div class="slider-arrow is-bottom-previous w-slider-arrow-left"><div class="slider-arrow-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M3.31066 8.75001L9.03033 14.4697L7.96967 15.5303L0.439339 8.00001L7.96967 0.469676L9.03033 1.53034L3.31066 7.25001L15.5 7.25L15.5 8.75L3.31066 8.75001Z" fill="currentColor"/>
-</svg></div></div><div class="slider-arrow is-bottom-next w-slider-arrow-right"><div class="slider-arrow-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12.6893 7.25L6.96967 1.53033L8.03033 0.469666L15.5607 8L8.03033 15.5303L6.96967 14.4697L12.6893 8.75H0.5V7.25H12.6893Z" fill="currentColor"/>
-</svg></div></div><div class="team-slide-nav w-slider-nav w-slider-nav-invert w-round"></div></div></div></div></div></div></section><section id="FAQs" class="faqs-section"><div class="padding-global"><div class="container-large"><div class="padding-section-large"><div class="faq-component"><div class="w-layout-grid faq-content"><div data-w-id="e9f62295-ed72-a20a-66db-4bf79f5bdfaa" style="opacity:0" class="faq-content-left"><div class="text-style-tagline">FAQs</div><div class="spacer-small"></div><h2 class="heading-style-h2">Need help? Start here.</h2></div><div class="faq-list"><div data-w-id="e9f62295-ed72-a20a-66db-4bf79f5bdfb5" style="opacity:0" class="faq-accordion"><div data-w-id="e9f62295-ed72-a20a-66db-4bf79f5bdfb6" class="faq-question"><div class="text-size-medium text-weight-bold">What services do you offer?</div><div class="faq-icon-wrapper"><div class="icon-embed-small w-embed"><svg width="100%" height="100%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M16.5303 20.8839C16.2374 21.1768 15.7626 21.1768 15.4697 20.8839L7.82318 13.2374C7.53029 12.9445 7.53029 12.4697 7.82318 12.1768L8.17674 11.8232C8.46963 11.5303 8.9445 11.5303 9.2374 11.8232L16 18.5858L22.7626 11.8232C23.0555 11.5303 23.5303 11.5303 23.8232 11.8232L24.1768 12.1768C24.4697 12.4697 24.4697 12.9445 24.1768 13.2374L16.5303 20.8839Z" fill="currentColor"/>
-</svg></div></div></div><div style="width:100%;height:0px" class="faq-answer"><p>We provide strategy consulting, workflow optimization, and leadership development to help businesses streamline their processes.</p><div class="spacer-small"></div></div></div><div data-w-id="e9f62295-ed72-a20a-66db-4bf79f5bdfbf" style="opacity:0" class="faq-accordion"><div data-w-id="e9f62295-ed72-a20a-66db-4bf79f5bdfc0" class="faq-question"><div class="text-size-medium text-weight-bold">How does your consulting process work?</div><div class="faq-icon-wrapper"><div class="icon-embed-small w-embed"><svg width="100%" height="100%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M16.5303 20.8839C16.2374 21.1768 15.7626 21.1768 15.4697 20.8839L7.82318 13.2374C7.53029 12.9445 7.53029 12.4697 7.82318 12.1768L8.17674 11.8232C8.46963 11.5303 8.9445 11.5303 9.2374 11.8232L16 18.5858L22.7626 11.8232C23.0555 11.5303 23.5303 11.5303 23.8232 11.8232L24.1768 12.1768C24.4697 12.4697 24.4697 12.9445 24.1768 13.2374L16.5303 20.8839Z" fill="currentColor"/>
-</svg></div></div></div><div style="width:100%;height:0px" class="faq-answer"><p>We start with a free consultation to understand your needs, followed by a tailored strategy to improve your business efficiency.</p><div class="spacer-small"></div></div></div><div data-w-id="e9f62295-ed72-a20a-66db-4bf79f5bdfc9" style="opacity:0" class="faq-accordion"><div data-w-id="e9f62295-ed72-a20a-66db-4bf79f5bdfca" class="faq-question"><div class="text-size-medium text-weight-bold">What industries do you work with?</div><div class="faq-icon-wrapper"><div class="icon-embed-small w-embed"><svg width="100%" height="100%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M16.5303 20.8839C16.2374 21.1768 15.7626 21.1768 15.4697 20.8839L7.82318 13.2374C7.53029 12.9445 7.53029 12.4697 7.82318 12.1768L8.17674 11.8232C8.46963 11.5303 8.9445 11.5303 9.2374 11.8232L16 18.5858L22.7626 11.8232C23.0555 11.5303 23.5303 11.5303 23.8232 11.8232L24.1768 12.1768C24.4697 12.4697 24.4697 12.9445 24.1768 13.2374L16.5303 20.8839Z" fill="currentColor"/>
-</svg></div></div></div><div style="width:100%;height:0px" class="faq-answer"><p>cyclize in working with startups, agencies, and established businesses looking to optimize their operations.</p><div class="spacer-small"></div></div></div><div data-w-id="e9f62295-ed72-a20a-66db-4bf79f5bdfd3" style="opacity:0" class="faq-accordion"><div data-w-id="e9f62295-ed72-a20a-66db-4bf79f5bdfd4" class="faq-question"><div class="text-size-medium text-weight-bold">How long does it take to see results?</div><div class="faq-icon-wrapper"><div class="icon-embed-small w-embed"><svg width="100%" height="100%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M16.5303 20.8839C16.2374 21.1768 15.7626 21.1768 15.4697 20.8839L7.82318 13.2374C7.53029 12.9445 7.53029 12.4697 7.82318 12.1768L8.17674 11.8232C8.46963 11.5303 8.9445 11.5303 9.2374 11.8232L16 18.5858L22.7626 11.8232C23.0555 11.5303 23.5303 11.5303 23.8232 11.8232L24.1768 12.1768C24.4697 12.4697 24.4697 12.9445 24.1768 13.2374L16.5303 20.8839Z" fill="currentColor"/>
-</svg></div></div></div><div style="width:100%;height:0px" class="faq-answer"><p>While it depends on the complexity of your needs, most clients start seeing measurable improvements within a few weeks.</p><div class="spacer-small"></div></div></div><div data-w-id="e9f62295-ed72-a20a-66db-4bf79f5bdfdd" style="opacity:0" class="faq-accordion"><div data-w-id="e9f62295-ed72-a20a-66db-4bf79f5bdfde" class="faq-question"><div class="text-size-medium text-weight-bold">How can I get started?</div><div class="faq-icon-wrapper"><div class="icon-embed-small w-embed"><svg width="100%" height="100%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M16.5303 20.8839C16.2374 21.1768 15.7626 21.1768 15.4697 20.8839L7.82318 13.2374C7.53029 12.9445 7.53029 12.4697 7.82318 12.1768L8.17674 11.8232C8.46963 11.5303 8.9445 11.5303 9.2374 11.8232L16 18.5858L22.7626 11.8232C23.0555 11.5303 23.5303 11.5303 23.8232 11.8232L24.1768 12.1768C24.4697 12.4697 24.4697 12.9445 24.1768 13.2374L16.5303 20.8839Z" fill="currentColor"/>
-</svg></div></div></div><div style="width:100%;height:0px" class="faq-answer"><p>Book a free consultation with us, and we’ll guide you through the next steps.</p><div class="spacer-small"></div></div></div></div></div></div></div></div></div></section><section class="section-buy-it"><div class="padding-global"><div class="container-large"><div class="padding-section-small-2"><div class="buy-it-component"><div class="buy-it-content"><div class="max-width-large banner"><div class="icon-embed-large w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--simple-icons" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m24 4.515l-7.658 14.97H9.149l3.205-6.204h-.144C9.566 16.713 5.621 18.973 0 19.485v-6.118s3.596-.213 5.71-2.435H0V4.515h6.417v5.278l.144-.001l2.622-5.277h4.854v5.244h.144l2.72-5.244z"></path></svg></div><h2 class="heading-style-h5">Make It Yours Now</h2></div><div class="button-group is-right"><a href="https://try.webflow.com/Closure" target="_blank" class="button-3 is-alternate w-button">Buy Template</a></div></div></div></div></div></div></section><section id="Contact" class="contact-section background-color-alternative"><div class="padding-global"><div class="container-large"><div class="padding-section-large"><div class="contact-component"><div class="w-layout-grid contact-content"><div class="contact-content-left"><div data-w-id="86340416-322b-1561-8215-993243d2beb3" style="opacity:0" class="contact-heading-wrapper"><div class="text-style-tagline">Contact</div><div class="spacer-xsmall"></div><h2 class="heading-style-h2">Contact us</h2></div><div class="spacer-medium"></div><div class="contact-form-block w-form"><form id="wf-form-Contact-7-Form" name="wf-form-Contact-1-Form" data-name="Contact 1 Form" method="get" class="contact-form" data-wf-page-id="678fef3c81e293bbfb483a87" data-wf-element-id="86340416-322b-1561-8215-993243d2bebe"><div data-w-id="86340416-322b-1561-8215-993243d2bebf" style="opacity:0" class="form-field-wrapper"><label for="Contact-7-Name" class="form-field-label">Name</label><input class="form-input w-input" maxlength="256" name="Contact-7-Name" data-name="Contact 7 Name" placeholder="" type="text" id="Contact-7-Name" required=""/></div><div data-w-id="86340416-322b-1561-8215-993243d2bec3" style="opacity:0" class="form-field-wrapper"><label for="Contact-7-Email" class="form-field-label">Email</label><input class="form-input w-input" maxlength="256" name="Contact-7-Email" data-name="Contact 7 Email" placeholder="" type="email" id="Contact-7-Email" required=""/></div><div data-w-id="86340416-322b-1561-8215-993243d2bec7" style="opacity:0" class="form-field-wrapper"><label for="Contact-7-Message" class="form-field-label">Message</label><textarea id="Contact-7-Message" name="Contact-7-Message" maxlength="5000" data-name="Contact 7 Message" placeholder="Type your message..." required="" class="form-input is-text-area w-input"></textarea></div><div class="margin-bottom margin-xsmall"><label id="Contact-7-Checkbox" data-w-id="86340416-322b-1561-8215-993243d2becc" style="opacity:0" class="w-checkbox form-checkbox"><div class="w-checkbox-input w-checkbox-input--inputType-custom form-checkbox-icon"></div><input type="checkbox" name="Contact-7-Checkbox" id="Contact 7 Checkbox" data-name="Contact 7 Checkbox" required="" style="opacity:0;position:absolute;z-index:-1"/><span for="Contact-7-Checkbox" class="form-checkbox-label text-size-small form w-form-label">I accept the <a href="#" class="text-style-link form">Terms</a></span></label></div><input type="submit" data-wait="Please wait..." id="w-node-_86340416-322b-1561-8215-993243d2bed2-fb483a87" data-w-id="86340416-322b-1561-8215-993243d2bed2" style="opacity:0" class="button form w-button" value="Submit"/></form><div class="form-message-success-wrapper w-form-done"><div class="form-message-success"><div class="success-text">Thank you! Your submission has been received!</div></div></div><div class="form-message-error-wrapper w-form-fail"><div class="form-message-error-st"><div class="error-text">Oops! Something went wrong while submitting the form.</div></div></div></div></div><div class="contact-image-wrapper"><div data-poster-url="https://cdn.prod.website-files.com/678fef3c81e293bbfb483a1b%2F679cd3e85b032a6719405edd_4253261-uhd_3840_2160_25fps-poster-00001.jpg" data-video-urls="https://cdn.prod.website-files.com/678fef3c81e293bbfb483a1b%2F679cd3e85b032a6719405edd_4253261-uhd_3840_2160_25fps-transcode.mp4,https://cdn.prod.website-files.com/678fef3c81e293bbfb483a1b%2F679cd3e85b032a6719405edd_4253261-uhd_3840_2160_25fps-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" data-w-id="3d93009d-8c46-38cd-7ebc-eeaaa58c149a" style="opacity:0" class="background-video w-background-video w-background-video-atom"><video id="3d93009d-8c46-38cd-7ebc-eeaaa58c149a-video" autoplay="" loop="" style="background-image:url(&quot;https://cdn.prod.website-files.com/678fef3c81e293bbfb483a1b%2F679cd3e85b032a6719405edd_4253261-uhd_3840_2160_25fps-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover"><source src="https://cdn.prod.website-files.com/678fef3c81e293bbfb483a1b%2F679cd3e85b032a6719405edd_4253261-uhd_3840_2160_25fps-transcode.mp4" data-wf-ignore="true"/><source src="https://cdn.prod.website-files.com/678fef3c81e293bbfb483a1b%2F679cd3e85b032a6719405edd_4253261-uhd_3840_2160_25fps-transcode.webm" data-wf-ignore="true"/></video></div></div></div></div></div></div></div></section><footer class="footer-component background-color-alternative"><div class="padding-global"><div class="container-large"><div class="padding-vertical padding-xxlarge"><div class="padding-bottom padding-large"><div class="w-layout-grid footer-top-wrapper"><div data-w-id="f323ef17-65d8-ff6e-d877-fd553b860d08" style="opacity:0" class="footer-left-wrapper"><a href="#" class="footer-logo-link w-nav-brand"><img loading="lazy" src="images/frame-20177.svg" alt="" class="footer-logo"/></a><div class="spacer-small"></div><div>Join our newsletter to stay up to date on features and releases.</div><div class="spacer-small"></div><div class="footer-form-block w-form"><form id="email-form" name="email-form" data-name="Email Form" method="get" class="footer-form" data-wf-page-id="678fef3c81e293bbfb483a87" data-wf-element-id="f323ef17-65d8-ff6e-d877-fd553b860d10"><input class="form-input w-input" maxlength="256" name="email-2" data-name="Email 2" placeholder="Enter your email" type="email" id="email-2" required=""/><input type="submit" data-wait="Please wait..." class="button is-secondary is-small footer w-button" value="Subscribe"/></form><div class="text-size-tiny footer">By subscribing you agree to with our <a href="#"><span>Privacy Policy</span></a> and provide consent to receive updates from our company.</div><div class="form-message-success-wrapper w-form-done"><div class="form-message-success"><div>Thank you! Your submission has been received!</div></div></div><div class="form-message-error-wrapper w-form-fail"><div class="form-message-error-st"><div>Oops! Something went wrong while submitting the form.</div></div></div></div></div><div data-w-id="f323ef17-65d8-ff6e-d877-fd553b860d21" style="opacity:0" class="w-layout-grid footer16_menu-wrapper"><div class="footer-link-column"><div class="text-weight-semibold footer">Page Section Links</div><div class="spacer-xsmall"></div><div class="footer-link-list"><a href="#Services" class="footer-link">Services</a><a href="#Team" class="footer-link">Team</a><a href="#Testimonials" class="footer-link">Testimonials</a><a href="#FAQs" class="footer-link">FAQs</a><a href="#Contact" class="footer-link">Contact</a></div></div><div class="footer-link-column"><div class="text-weight-semibold footer">Utility Pages</div><div class="spacer-xsmall"></div><div class="footer-link-list"><a href="/info/license" class="footer-link">License</a><a href="/info/changelog" class="footer-link">Changelog</a><a href="/info/style-guide" class="footer-link">Style Guide</a></div></div><div class="footer-link-column"><div class="text-weight-semibold footer">Follow us</div><div class="spacer-xsmall"></div><div class="footer-link-list"><a href="https://www.facebook.com/" target="_blank" class="footer16_social-link w-inline-block"><div class="icon-embed-xsmall w-embed"><svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M22 12.0611C22 6.50451 17.5229 2 12 2C6.47715 2 2 6.50451 2 12.0611C2 17.0828 5.65684 21.2452 10.4375 22V14.9694H7.89844V12.0611H10.4375V9.84452C10.4375 7.32296 11.9305 5.93012 14.2146 5.93012C15.3088 5.93012 16.4531 6.12663 16.4531 6.12663V8.60261H15.1922C13.95 8.60261 13.5625 9.37822 13.5625 10.1739V12.0611H16.3359L15.8926 14.9694H13.5625V22C18.3432 21.2452 22 17.083 22 12.0611Z" fill="CurrentColor"/>
-</svg></div><div>Facebook</div></a><a href="https://www.instagram.com/" target="_blank" class="footer16_social-link w-inline-block"><div class="icon-embed-xsmall w-embed"><svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M16 3H8C5.23858 3 3 5.23858 3 8V16C3 18.7614 5.23858 21 8 21H16C18.7614 21 21 18.7614 21 16V8C21 5.23858 18.7614 3 16 3ZM19.25 16C19.2445 17.7926 17.7926 19.2445 16 19.25H8C6.20735 19.2445 4.75549 17.7926 4.75 16V8C4.75549 6.20735 6.20735 4.75549 8 4.75H16C17.7926 4.75549 19.2445 6.20735 19.25 8V16ZM16.75 8.25C17.3023 8.25 17.75 7.80228 17.75 7.25C17.75 6.69772 17.3023 6.25 16.75 6.25C16.1977 6.25 15.75 6.69772 15.75 7.25C15.75 7.80228 16.1977 8.25 16.75 8.25ZM12 7.5C9.51472 7.5 7.5 9.51472 7.5 12C7.5 14.4853 9.51472 16.5 12 16.5C14.4853 16.5 16.5 14.4853 16.5 12C16.5027 10.8057 16.0294 9.65957 15.1849 8.81508C14.3404 7.97059 13.1943 7.49734 12 7.5ZM9.25 12C9.25 13.5188 10.4812 14.75 12 14.75C13.5188 14.75 14.75 13.5188 14.75 12C14.75 10.4812 13.5188 9.25 12 9.25C10.4812 9.25 9.25 10.4812 9.25 12Z" fill="CurrentColor"/>
-</svg></div><div>Instagram</div></a><a href="https://x.com/?lang=en" target="_blank" class="footer16_social-link w-inline-block"><div class="icon-embed-xsmall w-embed"><svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M17.1761 4H19.9362L13.9061 10.7774L21 20H15.4456L11.0951 14.4066L6.11723 20H3.35544L9.80517 12.7508L3 4H8.69545L12.6279 9.11262L17.1761 4ZM16.2073 18.3754H17.7368L7.86441 5.53928H6.2232L16.2073 18.3754Z" fill="CurrentColor"/>
-</svg></div><div>X</div></a><a href="https://www.linkedin.com/" target="_blank" class="footer16_social-link w-inline-block"><div class="icon-embed-xsmall w-embed"><svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 3C3.67157 3 3 3.67157 3 4.5V19.5C3 20.3284 3.67157 21 4.5 21H19.5C20.3284 21 21 20.3284 21 19.5V4.5C21 3.67157 20.3284 3 19.5 3H4.5ZM8.52076 7.00272C8.52639 7.95897 7.81061 8.54819 6.96123 8.54397C6.16107 8.53975 5.46357 7.90272 5.46779 7.00413C5.47201 6.15897 6.13998 5.47975 7.00764 5.49944C7.88795 5.51913 8.52639 6.1646 8.52076 7.00272ZM12.2797 9.76176H9.75971H9.7583V18.3216H12.4217V18.1219C12.4217 17.742 12.4214 17.362 12.4211 16.9819V16.9818V16.9816V16.9815V16.9812C12.4203 15.9674 12.4194 14.9532 12.4246 13.9397C12.426 13.6936 12.4372 13.4377 12.5005 13.2028C12.7381 12.3253 13.5271 11.7586 14.4074 11.8979C14.9727 11.9864 15.3467 12.3141 15.5042 12.8471C15.6013 13.1803 15.6449 13.5389 15.6491 13.8863C15.6605 14.9339 15.6589 15.9815 15.6573 17.0292V17.0294C15.6567 17.3992 15.6561 17.769 15.6561 18.1388V18.3202H18.328V18.1149C18.328 17.6629 18.3278 17.211 18.3275 16.7591V16.759V16.7588C18.327 15.6293 18.3264 14.5001 18.3294 13.3702C18.3308 12.8597 18.276 12.3563 18.1508 11.8627C17.9638 11.1286 17.5771 10.5211 16.9485 10.0824C16.5027 9.77019 16.0133 9.5691 15.4663 9.5466C15.404 9.54401 15.3412 9.54062 15.2781 9.53721L15.2781 9.53721L15.2781 9.53721C14.9984 9.52209 14.7141 9.50673 14.4467 9.56066C13.6817 9.71394 13.0096 10.0641 12.5019 10.6814C12.4429 10.7522 12.3852 10.8241 12.2991 10.9314L12.2991 10.9315L12.2797 10.9557V9.76176ZM5.68164 18.3244H8.33242V9.76733H5.68164V18.3244Z" fill="CurrentColor"/>
-</svg></div><div>LinkedIn</div></a><a href="https://www.youtube.com/" target="_blank" class="footer16_social-link w-inline-block"><div class="icon-embed-xsmall w-embed"><svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M20.5686 4.77345C21.5163 5.02692 22.2555 5.76903 22.5118 6.71673C23.1821 9.42042 23.1385 14.5321 22.5259 17.278C22.2724 18.2257 21.5303 18.965 20.5826 19.2213C17.9071 19.8831 5.92356 19.8015 3.40294 19.2213C2.45524 18.9678 1.71595 18.2257 1.45966 17.278C0.827391 14.7011 0.871044 9.25144 1.44558 6.73081C1.69905 5.78311 2.44116 5.04382 3.38886 4.78753C6.96561 4.0412 19.2956 4.282 20.5686 4.77345ZM9.86682 8.70227L15.6122 11.9974L9.86682 15.2925V8.70227Z" fill="CurrentColor"/>
-</svg></div><div>Youtube</div></a></div></div></div></div></div><div class="padding-bottom padding-large"><div data-w-id="f323ef17-65d8-ff6e-d877-fd553b860d5a" style="opacity:0" class="footer-image-wrapper"><img loading="lazy" src="images/frame-20177-1.svg" alt="" class="footer-image"/></div></div><div class="line-divider"></div><div data-w-id="f323ef17-65d8-ff6e-d877-fd553b860d5d" style="opacity:0" class="padding-top padding-medium"><div class="footer-bottom-wrapper"><div class="footer-credit-text">© 2025 All rights reserved. Made by <a href="https://webflow.com/templates/designers/kamal-yanni" class="link">Kamal Yanni</a></div><div class="w-layout-grid footer-legal-list"><a href="/info/license" class="footer-legal-link">License</a><a href="/info/changelog" class="footer-legal-link">Changelog</a><a href="/info/style-guide" class="footer-legal-link">Style Guide</a></div></div></div></div></div></div><a href="https://try.webflow.com/Closure" target="_blank" class="button-4 icon buy-now w-inline-block"><div>Get Template Now</div></a></footer></main></div><script src="js/jquery.js?site=678fef3c81e293bbfb483a1b" type="text/javascript"  ></script><script src="js/webflow.schunk.4a394eb5af8156f2.js" type="text/javascript"></script><script src="js/webflow.schunk.3bf3c06809a02500.js" type="text/javascript"></script><script src="js/webflow.schunk.ef7080c06606ca1c.js" type="text/javascript"></script><script src="js/webflow.schunk.2aef572c50f024ab.js" type="text/javascript"></script><script src="js/webflow-script.js" type="text/javascript"></script></body></html>
+        /* Apply "..." after 2 lines of text */
+        .text-style-2lines {
+          display: -webkit-box;
+          overflow: hidden;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+        }
+
+        /* Adds inline flex display */
+        .display-inlineflex {
+          display: inline-flex;
+        }
+
+        /* These classes are never overwritten */
+        .hide {
+          display: none !important;
+        }
+
+        @media screen and (max-width: 991px) {
+
+          .hide,
+          .hide-tablet {
+            display: none !important;
+          }
+        }
+
+        @media screen and (max-width: 767px) {
+          .hide-mobile-landscape {
+            display: none !important;
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          .hide-mobile {
+            display: none !important;
+          }
+        }
+
+        .margin-0 {
+          margin: 0rem !important;
+        }
+
+        .padding-0 {
+          padding: 0rem !important;
+        }
+
+        .spacing-clean {
+          padding: 0rem !important;
+          margin: 0rem !important;
+        }
+
+        .margin-top {
+          margin-right: 0rem !important;
+          margin-bottom: 0rem !important;
+          margin-left: 0rem !important;
+        }
+
+        .padding-top {
+          padding-right: 0rem !important;
+          padding-bottom: 0rem !important;
+          padding-left: 0rem !important;
+        }
+
+        .margin-right {
+          margin-top: 0rem !important;
+          margin-bottom: 0rem !important;
+          margin-left: 0rem !important;
+        }
+
+        .padding-right {
+          padding-top: 0rem !important;
+          padding-bottom: 0rem !important;
+          padding-left: 0rem !important;
+        }
+
+        .margin-bottom {
+          margin-top: 0rem !important;
+          margin-right: 0rem !important;
+          margin-left: 0rem !important;
+        }
+
+        .padding-bottom {
+          padding-top: 0rem !important;
+          padding-right: 0rem !important;
+          padding-left: 0rem !important;
+        }
+
+        .margin-left {
+          margin-top: 0rem !important;
+          margin-right: 0rem !important;
+          margin-bottom: 0rem !important;
+        }
+
+        .padding-left {
+          padding-top: 0rem !important;
+          padding-right: 0rem !important;
+          padding-bottom: 0rem !important;
+        }
+
+        .margin-horizontal {
+          margin-top: 0rem !important;
+          margin-bottom: 0rem !important;
+        }
+
+        .padding-horizontal {
+          padding-top: 0rem !important;
+          padding-bottom: 0rem !important;
+        }
+
+        .margin-vertical {
+          margin-right: 0rem !important;
+          margin-left: 0rem !important;
+        }
+
+        .padding-vertical {
+          padding-right: 0rem !important;
+          padding-left: 0rem !important;
+        }
+
+        /* Apply "..." at 100% width */
+        .truncate-width {
+          width: 100%;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        /* Removes native scrollbar */
+        .no-scrollbar {
+          -ms-overflow-style: none;
+          overflow: -moz-scrollbars-none;
+        }
+
+        .no-scrollbar::-webkit-scrollbar {
+          display: none;
+        }
+      </style>
+    </div>
+    <main class="main-wrapper">
+      <div data-animation="default" class="navbar-component w-nav" data-easing2="ease"
+        fs-scrolldisable-element="smart-nav" data-easing="ease" data-collapse="medium"
+        data-w-id="4225229a-491a-3b6a-39f8-75c47326ce39" role="banner" data-duration="400">
+        <div class="navbar-container"><a href="#Home" class="navbar-logo-link w-nav-brand"><img loading="lazy"
+              src="images/Brandforagetm.svg" alt="" class="navbar-logo" /></a>
+          <nav role="navigation" id="w-node-_4225229a-491a-3b6a-39f8-75c47326ce3d-fb483a87"
+            class="navbar-menu is-page-height-tablet w-nav-menu"><a href="#Services"
+              class="navbar-link w-nav-link">Services</a><a href="#Team" class="navbar-link w-nav-link">Team</a><a
+              href="#Testimonials" class="navbar-link w-nav-link">Testimonials</a><a href="#FAQs"
+              class="navbar-link w-nav-link">FAQs</a></nav>
+          <div id="w-node-_4225229a-491a-3b6a-39f8-75c47326ce50-fb483a87" class="navbar-button-wrapper">
+            <div class="button-group"><a href="#" class="button is-secondary is-small w-button">Log In</a><a
+                href="#Contact" class="button is-small w-button">Contact</a></div>
+            <div class="navbar-menu-button w-nav-button">
+              <div class="menu-icon">
+                <div class="menu-icon-line-top"></div>
+                <div class="menu-icon-line-middle">
+                  <div class="menu-icon-line-middle-inner"></div>
+                </div>
+                <div class="menu-icon-line-bottom"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <header id="Home" class="hero-section">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-section-large">
+              <div class="hero-component">
+                <div class="w-layout-grid hero-content">
+                  <div class="hero-content-left">
+                    <div class="top-content">
+                      <h1 data-w-id="f76e041d-af60-0268-1cf5-2f7097b6ffbc" style="opacity:0" class="heading-style-h1">
+                        Turn Complexity Into Clarity With a Click</h1>
+                      <div class="spacer-small"></div>
+                      <p data-w-id="f76e041d-af60-0268-1cf5-2f7097b6ffbf" style="opacity:0"
+                        class="text-size-medium hero">Build stronger workflows with a system designed to keep your team
+                        focused and your projects on track.</p>
+                      <div class="spacer-medium"></div>
+                      <div data-w-id="f76e041d-af60-0268-1cf5-2f7097b6ffc2" style="opacity:0" class="button-group"><a
+                          href="#Contact" class="button w-button">Free Consultation</a><a href="#Services"
+                          class="button is-secondary w-button">Learn More</a></div>
+                    </div>
+                    <div data-w-id="536e5f7f-6f05-a07e-f346-a6227790c57a" style="opacity:0" class="trusted-content">
+                      <div class="trusted-images-wrapper">
+                        <div class="truted-image-wrapper"><img src="images/rectangle-2028.png" loading="lazy" alt=""
+                            class="trusted-image" /></div>
+                        <div class="truted-image-wrapper negative-gap"><img src="images/rectangle-2027.png"
+                            loading="lazy" alt="" class="trusted-image" /></div>
+                        <div class="truted-image-wrapper negative-gap"><img src="images/rectangle-2031.png"
+                            loading="lazy" alt="" class="trusted-image" /></div>
+                        <div class="truted-image-wrapper negative-gap"><img src="images/rectangle-2028.png"
+                            loading="lazy" alt="" class="trusted-image" /></div>
+                        <div class="truted-image-wrapper negative-gap"><img src="images/rectangle-2031.png"
+                            loading="lazy" alt="" class="trusted-image" /></div>
+                        <div class="truted-image-wrapper negative-gap"><img src="images/rectangle-2030.png"
+                            loading="lazy" alt="" class="trusted-image" /></div>
+                      </div>
+                      <div class="right-content">
+                        <div class="testimonial-rating-wrapper">
+                          <div class="testimonial-rating-icon">
+                            <div class="icon-embed-xsmall star w-embed"><svg width="100%" viewBox="0 0 18 17"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M8.16379 0.551109C8.47316 -0.183704 9.52684 -0.183703 9.83621 0.551111L11.6621 4.88811C11.7926 5.19789 12.0875 5.40955 12.426 5.43636L17.1654 5.81173C17.9684 5.87533 18.294 6.86532 17.6822 7.38306L14.0713 10.4388C13.8134 10.6571 13.7007 10.9996 13.7795 11.3259L14.8827 15.8949C15.0696 16.669 14.2172 17.2809 13.5297 16.8661L9.47208 14.4176C9.18225 14.2427 8.81775 14.2427 8.52793 14.4176L4.47029 16.8661C3.7828 17.2809 2.93036 16.669 3.11727 15.8949L4.22048 11.3259C4.29928 10.9996 4.18664 10.6571 3.92873 10.4388L0.317756 7.38306C-0.294046 6.86532 0.0315611 5.87533 0.834562 5.81173L5.57402 5.43636C5.91255 5.40955 6.20744 5.19789 6.33786 4.88811L8.16379 0.551109Z"
+                                  fill="currentColor" />
+                              </svg></div>
+                          </div>
+                          <div class="testimonial-rating-icon">
+                            <div class="icon-embed-xsmall star w-embed"><svg width="100%" viewBox="0 0 18 17"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M8.16379 0.551109C8.47316 -0.183704 9.52684 -0.183703 9.83621 0.551111L11.6621 4.88811C11.7926 5.19789 12.0875 5.40955 12.426 5.43636L17.1654 5.81173C17.9684 5.87533 18.294 6.86532 17.6822 7.38306L14.0713 10.4388C13.8134 10.6571 13.7007 10.9996 13.7795 11.3259L14.8827 15.8949C15.0696 16.669 14.2172 17.2809 13.5297 16.8661L9.47208 14.4176C9.18225 14.2427 8.81775 14.2427 8.52793 14.4176L4.47029 16.8661C3.7828 17.2809 2.93036 16.669 3.11727 15.8949L4.22048 11.3259C4.29928 10.9996 4.18664 10.6571 3.92873 10.4388L0.317756 7.38306C-0.294046 6.86532 0.0315611 5.87533 0.834562 5.81173L5.57402 5.43636C5.91255 5.40955 6.20744 5.19789 6.33786 4.88811L8.16379 0.551109Z"
+                                  fill="currentColor" />
+                              </svg></div>
+                          </div>
+                          <div class="testimonial-rating-icon">
+                            <div class="icon-embed-xsmall star w-embed"><svg width="100%" viewBox="0 0 18 17"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M8.16379 0.551109C8.47316 -0.183704 9.52684 -0.183703 9.83621 0.551111L11.6621 4.88811C11.7926 5.19789 12.0875 5.40955 12.426 5.43636L17.1654 5.81173C17.9684 5.87533 18.294 6.86532 17.6822 7.38306L14.0713 10.4388C13.8134 10.6571 13.7007 10.9996 13.7795 11.3259L14.8827 15.8949C15.0696 16.669 14.2172 17.2809 13.5297 16.8661L9.47208 14.4176C9.18225 14.2427 8.81775 14.2427 8.52793 14.4176L4.47029 16.8661C3.7828 17.2809 2.93036 16.669 3.11727 15.8949L4.22048 11.3259C4.29928 10.9996 4.18664 10.6571 3.92873 10.4388L0.317756 7.38306C-0.294046 6.86532 0.0315611 5.87533 0.834562 5.81173L5.57402 5.43636C5.91255 5.40955 6.20744 5.19789 6.33786 4.88811L8.16379 0.551109Z"
+                                  fill="currentColor" />
+                              </svg></div>
+                          </div>
+                          <div class="testimonial-rating-icon">
+                            <div class="icon-embed-xsmall star w-embed"><svg width="100%" viewBox="0 0 18 17"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M8.16379 0.551109C8.47316 -0.183704 9.52684 -0.183703 9.83621 0.551111L11.6621 4.88811C11.7926 5.19789 12.0875 5.40955 12.426 5.43636L17.1654 5.81173C17.9684 5.87533 18.294 6.86532 17.6822 7.38306L14.0713 10.4388C13.8134 10.6571 13.7007 10.9996 13.7795 11.3259L14.8827 15.8949C15.0696 16.669 14.2172 17.2809 13.5297 16.8661L9.47208 14.4176C9.18225 14.2427 8.81775 14.2427 8.52793 14.4176L4.47029 16.8661C3.7828 17.2809 2.93036 16.669 3.11727 15.8949L4.22048 11.3259C4.29928 10.9996 4.18664 10.6571 3.92873 10.4388L0.317756 7.38306C-0.294046 6.86532 0.0315611 5.87533 0.834562 5.81173L5.57402 5.43636C5.91255 5.40955 6.20744 5.19789 6.33786 4.88811L8.16379 0.551109Z"
+                                  fill="currentColor" />
+                              </svg></div>
+                          </div>
+                          <div class="testimonial-rating-icon">
+                            <div class="icon-embed-xsmall star w-embed"><svg width="100%" viewBox="0 0 18 17"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M8.16379 0.551109C8.47316 -0.183704 9.52684 -0.183703 9.83621 0.551111L11.6621 4.88811C11.7926 5.19789 12.0875 5.40955 12.426 5.43636L17.1654 5.81173C17.9684 5.87533 18.294 6.86532 17.6822 7.38306L14.0713 10.4388C13.8134 10.6571 13.7007 10.9996 13.7795 11.3259L14.8827 15.8949C15.0696 16.669 14.2172 17.2809 13.5297 16.8661L9.47208 14.4176C9.18225 14.2427 8.81775 14.2427 8.52793 14.4176L4.47029 16.8661C3.7828 17.2809 2.93036 16.669 3.11727 15.8949L4.22048 11.3259C4.29928 10.9996 4.18664 10.6571 3.92873 10.4388L0.317756 7.38306C-0.294046 6.86532 0.0315611 5.87533 0.834562 5.81173L5.57402 5.43636C5.91255 5.40955 6.20744 5.19789 6.33786 4.88811L8.16379 0.551109Z"
+                                  fill="currentColor" />
+                              </svg></div>
+                          </div>
+                        </div>
+                        <div class="text-block">Trusted by Over 2,000 Clients</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-poster-url="images/4435249-uhd_3840_2160_25fps-20-281-29-poster-00001.jpg"
+                    data-video-urls="images/4435249-uhd_3840_2160_25fps-20-281-29-transcode.mp4,images/4435249-uhd_3840_2160_25fps-20-281-29-transcode.webm"
+                    data-autoplay="true" data-loop="true" data-wf-ignore="true"
+                    data-w-id="2249a4f7-5baf-08bb-9fff-09ffb9eaa47d" style="opacity:0"
+                    class="background-video-2 w-background-video w-background-video-atom"><video
+                      id="2249a4f7-5baf-08bb-9fff-09ffb9eaa47d-video" autoplay="" loop=""
+                      style="background-image:url(&quot;images/4435249-uhd_3840_2160_25fps-20-281-29-poster-00001.jpg&quot;)"
+                      muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+                      <source src="images/4435249-uhd_3840_2160_25fps-20-281-29-transcode.mp4" data-wf-ignore="true" />
+                      <source src="images/4435249-uhd_3840_2160_25fps-20-281-29-transcode.webm" data-wf-ignore="true" />
+                    </video></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="logo-section">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-section-medium">
+              <div class="logo-component">
+                <div class="logo-content">
+                  <div class="text-align-center">
+                    <div class="max-width-large align-center">
+                      <h2 data-w-id="05e94905-820e-756d-52c0-ffda1171b259" style="opacity:0" class="heading-style-h6">
+                        Used by the world&#x27;s leading companies</h2>
+                    </div>
+                  </div>
+                  <div class="spacer-large"></div>
+                  <div class="w-layout-grid logo-list">
+                    <div id="w-node-_05e94905-820e-756d-52c0-ffda1171b25d-fb483a87" class="logo-wrapper"><img
+                        loading="lazy" src="images/logo.svg" alt="" class="logo" /></div>
+                    <div id="w-node-_05e94905-820e-756d-52c0-ffda1171b25f-fb483a87" class="logo-wrapper"><img
+                        loading="lazy" src="images/logo-1.svg" alt="" class="logo" /></div>
+                    <div id="w-node-_05e94905-820e-756d-52c0-ffda1171b261-fb483a87" class="logo-wrapper"><img
+                        loading="lazy" src="images/logo-2.svg" alt="" class="logo" /></div>
+                    <div id="w-node-_05e94905-820e-756d-52c0-ffda1171b263-fb483a87" class="logo-wrapper"><img
+                        loading="lazy" src="images/logo-3.svg" alt="" class="logo" /></div>
+                    <div id="w-node-_05e94905-820e-756d-52c0-ffda1171b265-fb483a87" class="logo-wrapper"><img
+                        loading="lazy" src="images/logo-3.svg" alt="" class="logo" /></div>
+                    <div id="w-node-_05e94905-820e-756d-52c0-ffda1171b267-fb483a87" class="logo-wrapper"><img
+                        loading="lazy" src="images/logo-2.svg" alt="" class="logo" /></div>
+                    <div id="w-node-_7a107b69-0177-d333-144c-3556a8b40e6e-fb483a87" class="logo-wrapper"><img
+                        loading="lazy" src="images/logo-1.svg" alt="" class="logo" /></div>
+                    <div id="w-node-b95f2560-bafd-2c8f-b0ec-3752de116217-fb483a87" class="logo-wrapper"><img
+                        loading="lazy" src="images/logo.svg" alt="" class="logo" /></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="Services" class="services-section background-color-alternative">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-section-large">
+              <div class="services-component">
+                <div class="services-content">
+                  <div class="services-inner-wrapper">
+                    <div data-w-id="a22d96a7-2c47-06d5-702a-4bf040b09fc1" style="opacity:0" class="services-header">
+                      <div class="text-style-tagline">Services</div>
+                      <div class="spacer-xsmall"></div>
+                      <h2 class="heading-style-h2">Tailored Solutions for Lasting Success</h2>
+                      <div class="spacer-small"></div>
+                      <p class="text-size-medium services">We simplify the complex, helping you streamline operations,
+                        scale smarter, and drive impact.</p>
+                    </div>
+                    <div data-duration-in="400" data-duration-out="200" data-current="Tab 3" data-easing="ease"
+                      class="services-tabs w-tabs">
+                      <div id="w-node-a22d96a7-2c47-06d5-702a-4bf040b09fcb-fb483a87"
+                        class="services-tabs-menu w-tab-menu"><a data-w-tab="Tab 1"
+                          id="w-node-a22d96a7-2c47-06d5-702a-4bf040b09fcc-fb483a87"
+                          class="services-tab-link w-inline-block w-tab-link">
+                          <h3 data-w-id="a22d96a7-2c47-06d5-702a-4bf040b09fcd" style="opacity:0"
+                            class="heading-style-h5">Market Analysis</h3>
+                        </a><a data-w-tab="Tab 2" class="services-tab-link w-inline-block w-tab-link">
+                          <h3 data-w-id="a22d96a7-2c47-06d5-702a-4bf040b09fd4" style="opacity:0"
+                            class="heading-style-h5">Strategic Planning</h3>
+                        </a><a data-w-tab="Tab 3" class="services-tab-link w-inline-block w-tab-link w--current">
+                          <h3 data-w-id="a22d96a7-2c47-06d5-702a-4bf040b09fdb" style="opacity:0"
+                            class="heading-style-h5">Business Optimization </h3>
+                        </a></div>
+                      <div class="services-tabs-content w-tab-content">
+                        <div data-w-tab="Tab 1" class="services-tab-pane w-tab-pane">
+                          <div class="services-image-wrapper"><img loading="lazy"
+                              src="images/linkedin-sales-solutions-vez9tsew7x8-unsplash.avif" alt=""
+                              class="services-image" /></div>
+                        </div>
+                        <div data-w-tab="Tab 2" class="services-tab-pane w-tab-pane">
+                          <div class="services-image-wrapper">
+                            <div data-poster-url="images/orange-20tech-20hd-20video-poster-00001.jpg"
+                              data-video-urls="images/orange-20tech-20hd-20video-transcode.mp4,https://cdn.prod.website-files.com/678fef3c81e293bbfb483a1b%2F67c12743f4d4d0071ed82c4f_Orange%20Tech%20HD%20Video-transcode.webm"
+                              data-autoplay="true" data-loop="true" data-wf-ignore="true"
+                              class="background-video-3 w-background-video w-background-video-atom"><video
+                                id="cbcc8c0d-aebb-6a9b-4aa7-2fddfca730b4-video" autoplay="" loop=""
+                                style="background-image:url(&quot;images/orange-20tech-20hd-20video-poster-00001.jpg&quot;)"
+                                muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+                                <source src="images/orange-20tech-20hd-20video-transcode.mp4" data-wf-ignore="true" />
+                                <source
+                                  src="https://cdn.prod.website-files.com/678fef3c81e293bbfb483a1b%2F67c12743f4d4d0071ed82c4f_Orange%20Tech%20HD%20Video-transcode.webm"
+                                  data-wf-ignore="true" />
+                              </video></div>
+                          </div>
+                        </div>
+                        <div data-w-tab="Tab 3" class="services-tab-pane w-tab-pane w--tab-active">
+                          <div data-w-id="a22d96a7-2c47-06d5-702a-4bf040b09feb" style="opacity:0"
+                            class="services-image-wrapper"><img loading="lazy"
+                              src="images/futuristic-20background-20low-20poly-20-1-.avif" alt=""
+                              class="services-image" /></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="stats-section text-color-alternate">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-section-large">
+              <div class="stats-component">
+                <div data-w-id="adb887fc-5c36-089b-e967-62d4a6c28679" style="opacity:0" class="max-width-large">
+                  <div class="text-style-tagline">Stats</div>
+                  <div class="spacer-xsmall"></div>
+                  <h2 class="heading-style-h2 stats">Proven Results That Drive Success</h2>
+                  <div class="spacer-small"></div>
+                  <p class="text-size-medium stats">We don’t just promise results—we deliver measurable improvements
+                    that enhance efficiency and growth.</p>
+                </div>
+                <div class="spacer-xxlarge"></div>
+                <div class="w-layout-grid stats-list">
+                  <div data-w-id="adb887fc-5c36-089b-e967-62d4a6c28684" style="opacity:0" class="stats-item">
+                    <div class="stats-number">80%</div>
+                    <div class="spacer-xxsmall"></div>
+                    <h3 class="heading-style-h6 stats">Faster Project Delivery</h3>
+                  </div>
+                  <div data-w-id="adb887fc-5c36-089b-e967-62d4a6c2868a" style="opacity:0" class="stats-item">
+                    <div class="stats-number">3X</div>
+                    <div class="spacer-xxsmall"></div>
+                    <h3 class="heading-style-h6 stats">Revenue Growth</h3>
+                  </div>
+                  <div data-w-id="adb887fc-5c36-089b-e967-62d4a6c28690" style="opacity:0" class="stats-item">
+                    <div class="stats-number">95%</div>
+                    <div class="spacer-xxsmall"></div>
+                    <h3 class="heading-style-h6 stats">Client Satisfaction Rate</h3>
+                  </div>
+                </div>
+                <div class="spacer-xxlarge"></div>
+                <div data-w-id="adb887fc-5c36-089b-e967-62d4a6c28697" style="opacity:0" class="button-group"><a
+                    href="#Contact" class="button is-alternate w-button">Free Consultation</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="stats-background-image-wrapper">
+          <div class="image-overlay-layer"></div>
+          <div
+            data-poster-url="https://cdn.prod.website-files.com/678fef3c81e293bbfb483a1b%2F67c1242ca9d3aa1c27cf91aa_4K%20Tech%20Video%2030fps-poster-00001.jpg"
+            data-video-urls="https://cdn.prod.website-files.com/678fef3c81e293bbfb483a1b%2F67c1242ca9d3aa1c27cf91aa_4K%20Tech%20Video%2030fps-transcode.mp4,https://cdn.prod.website-files.com/678fef3c81e293bbfb483a1b%2F67c1242ca9d3aa1c27cf91aa_4K%20Tech%20Video%2030fps-transcode.webm"
+            data-autoplay="true" data-loop="true" data-wf-ignore="true"
+            class="background-video-4 w-background-video w-background-video-atom"><video
+              id="5d5c0a9f-2703-f2b6-d643-20723b9da1ba-video" autoplay="" loop=""
+              style="background-image:url(&quot;https://cdn.prod.website-files.com/678fef3c81e293bbfb483a1b%2F67c1242ca9d3aa1c27cf91aa_4K%20Tech%20Video%2030fps-poster-00001.jpg&quot;)"
+              muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+              <source
+                src="https://cdn.prod.website-files.com/678fef3c81e293bbfb483a1b%2F67c1242ca9d3aa1c27cf91aa_4K%20Tech%20Video%2030fps-transcode.mp4"
+                data-wf-ignore="true" />
+              <source
+                src="https://cdn.prod.website-files.com/678fef3c81e293bbfb483a1b%2F67c1242ca9d3aa1c27cf91aa_4K%20Tech%20Video%2030fps-transcode.webm"
+                data-wf-ignore="true" />
+            </video></div>
+        </div>
+      </section>
+      <section class="features-section">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-section-large">
+              <div class="features-component">
+                <div class="w-layout-grid features-content">
+                  <div data-w-id="8c8b2422-c467-420f-ed97-9018ecfc793b" style="opacity:0"
+                    class="features-image-wrapper"><img loading="lazy" src="images/cherrydeck-rmilc1piwm0-unsplash.avif"
+                      alt="" class="feature-image" /></div>
+                  <div id="w-node-_8c8b2422-c467-420f-ed97-9018ecfc793d-fb483a87" class="features-content-right">
+                    <div data-w-id="2e676d94-3d22-420d-6e0e-42e70de0e062" style="opacity:0" class="content-wrapper">
+                      <h2 class="heading-style-h3 tempo">Transform Challenges Into Opportunities</h2>
+                      <div class="spacer-small"></div>
+                      <p class="text-size-medium features">Our approach ensures your team stays aligned, productive, and
+                        focused on what matters most.</p>
+                      <div class="spacer-medium"></div>
+                      <div class="button-group"><a href="#Contact" class="button w-button">Free Consultation</a><a
+                          href="#Services" class="button is-secondary w-button">Learn More</a></div>
+                    </div>
+                    <div class="w-layout-grid features-item-list">
+                      <div data-w-id="8c8b2422-c467-420f-ed97-9018ecfc7948" style="opacity:0" class="feature-item">
+                        <div class="feature-item-icon-wrapper"><img loading="lazy" src="images/frame.svg" alt=""
+                            class="icon-1x1-medium" /></div>
+                        <div class="spacer-xsmall"></div>
+                        <h3 class="heading-style-h6">Seamless Collaboration</h3>
+                        <div class="spacer-xsmall"></div>
+                        <p>Enhance team communication and coordination with structured workflows.</p>
+                      </div>
+                      <div data-w-id="8c8b2422-c467-420f-ed97-9018ecfc7951" style="opacity:0" class="feature-item">
+                        <div class="feature-item-icon-wrapper"><img loading="lazy" src="images/frame-1.svg" alt=""
+                            class="icon-1x1-medium" /></div>
+                        <div class="spacer-xsmall"></div>
+                        <h3 class="heading-style-h6">Scalable Growth</h3>
+                        <div class="spacer-xsmall"></div>
+                        <p>Build a foundation that grows with your business, ensuring long-term success.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="Testimonials" class="testimonial-section">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-section-large">
+              <div class="testimonial-component">
+                <div data-w-id="69333749-9634-0a01-7544-8866c323279f" style="opacity:0"
+                  class="w-layout-grid stats-content">
+                  <div data-w-id="69333749-9634-0a01-7544-8866c32327a0" style="opacity:0" class="stats-content-left">
+                    <div class="text-style-tagline">Testimonials</div>
+                    <div class="spacer-small"></div>
+                    <h2 class="heading-style-h3 test">Success Stories from Our Clients</h2>
+                  </div>
+                  <div data-w-id="69333749-9634-0a01-7544-8866c32327a3" style="opacity:0" class="stats-content-right">
+                    <p class="text-size-medium test">We take pride in helping businesses simplify workflows, increase
+                      efficiency, and scale effortlessly. See what our clients have to say.</p>
+                    <div class="button-group test"><a href="#Contact" class="button w-button">Free Consultation</a><a
+                        href="#Services" class="button is-secondary w-button">Learn More</a></div>
+                  </div>
+                </div>
+                <div class="spacer-xxlarge"></div>
+                <section data-w-id="f768ebe3-063e-f935-0ae2-294def27a43e" class="testimonial-cards-carousel">
+                  <div class="carousel-component">
+                    <div class="carousel-inner-wrapper">
+                      <div class="carousel-marquee">
+                        <div class="testimonial-card">
+                          <div class="testimonial-content-top">
+                            <div class="testimonial-logo-wrapper"><img loading="lazy" src="images/logo-1.svg" alt=""
+                                class="testimonial-logo" /></div>
+                            <div class="spacer-large"></div>
+                            <div class="text-size-medium">&quot;Managing multiple projects has never been easier.
+                              Closure is the best productivity tool we’ve used.&quot;</div>
+                            <div class="spacer-small"></div>
+                            <div class="testimonial-client">
+                              <div class="testimonial-client-image-wrapper"><img loading="lazy"
+                                  src="images/frame-20189.png" alt="" class="testimonial-customer-image" /></div>
+                              <div class="testimonial-client-info">
+                                <div class="text-weight-semibold">Michael Torres</div>
+                                <div>Marketing Director at GrowthHive</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="testimonial-card">
+                          <div class="testimonial-content-top">
+                            <div class="testimonial-logo-wrapper"><img loading="lazy" src="images/logo-1.svg" alt=""
+                                class="testimonial-logo" /></div>
+                            <div class="spacer-large"></div>
+                            <div class="text-size-medium">&quot;Closure completely transformed how our team
+                              collaborates. Task management is now seamless, and deadlines are always met!&quot;</div>
+                            <div class="spacer-small"></div>
+                            <div class="testimonial-client">
+                              <div class="testimonial-client-image-wrapper"><img
+                                  sizes="(max-width: 1024px) 100vw, 1024px"
+                                  srcset="images/uifaces-human-image-p-500.jpg 500w, images/uifaces-human-image-p-800.jpg 800w, images/uifaces-human-image.jpg 1024w"
+                                  alt="" src="images/uifaces-human-image.jpg" loading="lazy"
+                                  class="testimonial-customer-image" /></div>
+                              <div class="testimonial-client-info">
+                                <div class="text-weight-semibold">James Carter</div>
+                                <div>Project Manager</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="testimonial-card">
+                          <div class="testimonial-content-top">
+                            <div class="testimonial-logo-wrapper"><img loading="lazy" src="images/logo-1.svg" alt=""
+                                class="testimonial-logo" /></div>
+                            <div class="spacer-large"></div>
+                            <div class="text-size-medium">&quot;An absolute game-changer! Our productivity has
+                              skyrocketed since switching to Closure.&quot;</div>
+                            <div class="spacer-small"></div>
+                            <div class="testimonial-client">
+                              <div class="testimonial-client-image-wrapper"><img
+                                  sizes="(max-width: 1024px) 100vw, 1024px"
+                                  srcset="images/uifaces-popular-image-p-500.jpg 500w, images/uifaces-popular-image-p-800.jpg 800w, images/uifaces-popular-image.jpg 1024w"
+                                  alt="" src="images/uifaces-popular-image.jpg" loading="lazy"
+                                  class="testimonial-customer-image" /></div>
+                              <div class="testimonial-client-info">
+                                <div class="text-weight-semibold">Michael Thompson</div>
+                                <div>CEO at TechNova</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-marquee">
+                        <div class="testimonial-card">
+                          <div class="testimonial-content-top">
+                            <div class="testimonial-logo-wrapper"><img loading="lazy" src="images/logo-1.svg" alt=""
+                                class="testimonial-logo" /></div>
+                            <div class="spacer-large"></div>
+                            <div class="text-size-medium">&quot;I love how intuitive and efficient Closure is. It keeps
+                              our remote team aligned and focused.&quot;</div>
+                            <div class="spacer-small"></div>
+                            <div class="testimonial-client">
+                              <div class="testimonial-client-image-wrapper"><img loading="lazy"
+                                  src="images/frame-20189.png" alt="" class="testimonial-customer-image" /></div>
+                              <div class="testimonial-client-info">
+                                <div class="text-weight-semibold">Daniel Rodriguez</div>
+                                <div>Operations Director</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="testimonial-card">
+                          <div class="testimonial-content-top">
+                            <div class="testimonial-logo-wrapper"><img loading="lazy" src="images/logo-1.svg" alt=""
+                                class="testimonial-logo" /></div>
+                            <div class="spacer-large"></div>
+                            <div class="text-size-medium">&quot;The analytics and insights feature helps us track
+                              progress effortlessly. Highly recommend it!&quot;</div>
+                            <div class="spacer-small"></div>
+                            <div class="testimonial-client">
+                              <div class="testimonial-client-image-wrapper"><img
+                                  sizes="(max-width: 1024px) 100vw, 1024px"
+                                  srcset="images/uifaces-popular-image-20-1-p-500.jpg 500w, images/uifaces-popular-image-20-1-p-800.jpg 800w, images/uifaces-popular-image-20-1-.jpg 1024w"
+                                  alt="" src="images/uifaces-popular-image-20-1-.jpg" loading="lazy"
+                                  class="testimonial-customer-image" /></div>
+                              <div class="testimonial-client-info">
+                                <div class="text-weight-semibold">Robert Mitchell</div>
+                                <div>Business Consultant</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="testimonial-card">
+                          <div class="testimonial-content-top">
+                            <div class="testimonial-logo-wrapper"><img loading="lazy" src="images/logo-1.svg" alt=""
+                                class="testimonial-logo" /></div>
+                            <div class="spacer-large"></div>
+                            <div class="text-size-medium">&quot;As a startup founder, I needed a simple yet powerful
+                              tool. Closure exceeded my expectations!&quot;</div>
+                            <div class="spacer-small"></div>
+                            <div class="testimonial-client">
+                              <div class="testimonial-client-image-wrapper"><img
+                                  sizes="(max-width: 1024px) 100vw, 1024px"
+                                  srcset="images/uifaces-human-image-p-500.jpg 500w, images/uifaces-human-image-p-800.jpg 800w, images/uifaces-human-image.jpg 1024w"
+                                  alt="" src="images/uifaces-human-image.jpg" loading="lazy"
+                                  class="testimonial-customer-image" /></div>
+                              <div class="testimonial-client-info">
+                                <div class="text-weight-semibold">Ethan Walker</div>
+                                <div>Founder of Bright Labs</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="FAQs" class="faqs-section">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-section-large">
+              <div class="faq-component">
+                <div class="w-layout-grid faq-content">
+                  <div data-w-id="e9f62295-ed72-a20a-66db-4bf79f5bdfaa" style="opacity:0" class="faq-content-left">
+                    <div class="text-style-tagline">FAQs</div>
+                    <div class="spacer-small"></div>
+                    <h2 class="heading-style-h2">Need help? Start here.</h2>
+                  </div>
+                  <div class="faq-list">
+                    <div data-w-id="e9f62295-ed72-a20a-66db-4bf79f5bdfb5" style="opacity:0" class="faq-accordion">
+                      <div data-w-id="e9f62295-ed72-a20a-66db-4bf79f5bdfb6" class="faq-question">
+                        <div class="text-size-medium text-weight-bold">What services do you offer?</div>
+                        <div class="faq-icon-wrapper">
+                          <div class="icon-embed-small w-embed"><svg width="100%" height="100%" viewBox="0 0 32 32"
+                              fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M16.5303 20.8839C16.2374 21.1768 15.7626 21.1768 15.4697 20.8839L7.82318 13.2374C7.53029 12.9445 7.53029 12.4697 7.82318 12.1768L8.17674 11.8232C8.46963 11.5303 8.9445 11.5303 9.2374 11.8232L16 18.5858L22.7626 11.8232C23.0555 11.5303 23.5303 11.5303 23.8232 11.8232L24.1768 12.1768C24.4697 12.4697 24.4697 12.9445 24.1768 13.2374L16.5303 20.8839Z"
+                                fill="currentColor" />
+                            </svg></div>
+                        </div>
+                      </div>
+                      <div style="width:100%;height:0px" class="faq-answer">
+                        <p>We provide strategy consulting, workflow optimization, and leadership development to help
+                          businesses streamline their processes.</p>
+                        <div class="spacer-small"></div>
+                      </div>
+                    </div>
+                    <div data-w-id="e9f62295-ed72-a20a-66db-4bf79f5bdfbf" style="opacity:0" class="faq-accordion">
+                      <div data-w-id="e9f62295-ed72-a20a-66db-4bf79f5bdfc0" class="faq-question">
+                        <div class="text-size-medium text-weight-bold">How does your consulting process work?</div>
+                        <div class="faq-icon-wrapper">
+                          <div class="icon-embed-small w-embed"><svg width="100%" height="100%" viewBox="0 0 32 32"
+                              fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M16.5303 20.8839C16.2374 21.1768 15.7626 21.1768 15.4697 20.8839L7.82318 13.2374C7.53029 12.9445 7.53029 12.4697 7.82318 12.1768L8.17674 11.8232C8.46963 11.5303 8.9445 11.5303 9.2374 11.8232L16 18.5858L22.7626 11.8232C23.0555 11.5303 23.5303 11.5303 23.8232 11.8232L24.1768 12.1768C24.4697 12.4697 24.4697 12.9445 24.1768 13.2374L16.5303 20.8839Z"
+                                fill="currentColor" />
+                            </svg></div>
+                        </div>
+                      </div>
+                      <div style="width:100%;height:0px" class="faq-answer">
+                        <p>We start with a free consultation to understand your needs, followed by a tailored strategy
+                          to improve your business efficiency.</p>
+                        <div class="spacer-small"></div>
+                      </div>
+                    </div>
+                    <div data-w-id="e9f62295-ed72-a20a-66db-4bf79f5bdfc9" style="opacity:0" class="faq-accordion">
+                      <div data-w-id="e9f62295-ed72-a20a-66db-4bf79f5bdfca" class="faq-question">
+                        <div class="text-size-medium text-weight-bold">What industries do you work with?</div>
+                        <div class="faq-icon-wrapper">
+                          <div class="icon-embed-small w-embed"><svg width="100%" height="100%" viewBox="0 0 32 32"
+                              fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M16.5303 20.8839C16.2374 21.1768 15.7626 21.1768 15.4697 20.8839L7.82318 13.2374C7.53029 12.9445 7.53029 12.4697 7.82318 12.1768L8.17674 11.8232C8.46963 11.5303 8.9445 11.5303 9.2374 11.8232L16 18.5858L22.7626 11.8232C23.0555 11.5303 23.5303 11.5303 23.8232 11.8232L24.1768 12.1768C24.4697 12.4697 24.4697 12.9445 24.1768 13.2374L16.5303 20.8839Z"
+                                fill="currentColor" />
+                            </svg></div>
+                        </div>
+                      </div>
+                      <div style="width:100%;height:0px" class="faq-answer">
+                        <p>cyclize in working with startups, agencies, and established businesses looking to optimize
+                          their operations.</p>
+                        <div class="spacer-small"></div>
+                      </div>
+                    </div>
+                    <div data-w-id="e9f62295-ed72-a20a-66db-4bf79f5bdfd3" style="opacity:0" class="faq-accordion">
+                      <div data-w-id="e9f62295-ed72-a20a-66db-4bf79f5bdfd4" class="faq-question">
+                        <div class="text-size-medium text-weight-bold">How long does it take to see results?</div>
+                        <div class="faq-icon-wrapper">
+                          <div class="icon-embed-small w-embed"><svg width="100%" height="100%" viewBox="0 0 32 32"
+                              fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M16.5303 20.8839C16.2374 21.1768 15.7626 21.1768 15.4697 20.8839L7.82318 13.2374C7.53029 12.9445 7.53029 12.4697 7.82318 12.1768L8.17674 11.8232C8.46963 11.5303 8.9445 11.5303 9.2374 11.8232L16 18.5858L22.7626 11.8232C23.0555 11.5303 23.5303 11.5303 23.8232 11.8232L24.1768 12.1768C24.4697 12.4697 24.4697 12.9445 24.1768 13.2374L16.5303 20.8839Z"
+                                fill="currentColor" />
+                            </svg></div>
+                        </div>
+                      </div>
+                      <div style="width:100%;height:0px" class="faq-answer">
+                        <p>While it depends on the complexity of your needs, most clients start seeing measurable
+                          improvements within a few weeks.</p>
+                        <div class="spacer-small"></div>
+                      </div>
+                    </div>
+                    <div data-w-id="e9f62295-ed72-a20a-66db-4bf79f5bdfdd" style="opacity:0" class="faq-accordion">
+                      <div data-w-id="e9f62295-ed72-a20a-66db-4bf79f5bdfde" class="faq-question">
+                        <div class="text-size-medium text-weight-bold">How can I get started?</div>
+                        <div class="faq-icon-wrapper">
+                          <div class="icon-embed-small w-embed"><svg width="100%" height="100%" viewBox="0 0 32 32"
+                              fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M16.5303 20.8839C16.2374 21.1768 15.7626 21.1768 15.4697 20.8839L7.82318 13.2374C7.53029 12.9445 7.53029 12.4697 7.82318 12.1768L8.17674 11.8232C8.46963 11.5303 8.9445 11.5303 9.2374 11.8232L16 18.5858L22.7626 11.8232C23.0555 11.5303 23.5303 11.5303 23.8232 11.8232L24.1768 12.1768C24.4697 12.4697 24.4697 12.9445 24.1768 13.2374L16.5303 20.8839Z"
+                                fill="currentColor" />
+                            </svg></div>
+                        </div>
+                      </div>
+                      <div style="width:100%;height:0px" class="faq-answer">
+                        <p>Book a free consultation with us, and we’ll guide you through the next steps.</p>
+                        <div class="spacer-small"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="Contact" class="contact-section background-color-alternative">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-section-large">
+              <div class="contact-component">
+                <div class="w-layout-grid contact-content">
+                  <div class="contact-content-left">
+                    <div data-w-id="86340416-322b-1561-8215-993243d2beb3" style="opacity:0"
+                      class="contact-heading-wrapper">
+                      <div class="text-style-tagline">Contact</div>
+                      <div class="spacer-xsmall"></div>
+                      <h2 class="heading-style-h2">Contact us</h2>
+                    </div>
+                    <div class="spacer-medium"></div>
+                    <div class="contact-form-block w-form">
+                      <form id="wf-form-Contact-7-Form" name="wf-form-Contact-1-Form" data-name="Contact 1 Form"
+                        method="get" class="contact-form" data-wf-page-id="678fef3c81e293bbfb483a87"
+                        data-wf-element-id="86340416-322b-1561-8215-993243d2bebe">
+                        <div data-w-id="86340416-322b-1561-8215-993243d2bebf" style="opacity:0"
+                          class="form-field-wrapper"><label for="Contact-7-Name"
+                            class="form-field-label">Name</label><input class="form-input w-input" maxlength="256"
+                            name="Contact-7-Name" data-name="Contact 7 Name" placeholder="" type="text"
+                            id="Contact-7-Name" required="" /></div>
+                        <div data-w-id="86340416-322b-1561-8215-993243d2bec3" style="opacity:0"
+                          class="form-field-wrapper"><label for="Contact-7-Email"
+                            class="form-field-label">Email</label><input class="form-input w-input" maxlength="256"
+                            name="Contact-7-Email" data-name="Contact 7 Email" placeholder="" type="email"
+                            id="Contact-7-Email" required="" /></div>
+                        <div data-w-id="86340416-322b-1561-8215-993243d2bec7" style="opacity:0"
+                          class="form-field-wrapper"><label for="Contact-7-Message"
+                            class="form-field-label">Message</label><textarea id="Contact-7-Message"
+                            name="Contact-7-Message" maxlength="5000" data-name="Contact 7 Message"
+                            placeholder="Type your message..." required=""
+                            class="form-input is-text-area w-input"></textarea></div>
+                        <div class="margin-bottom margin-xsmall"><label id="Contact-7-Checkbox"
+                            data-w-id="86340416-322b-1561-8215-993243d2becc" style="opacity:0"
+                            class="w-checkbox form-checkbox">
+                            <div class="w-checkbox-input w-checkbox-input--inputType-custom form-checkbox-icon"></div>
+                            <input type="checkbox" name="Contact-7-Checkbox" id="Contact 7 Checkbox"
+                              data-name="Contact 7 Checkbox" required=""
+                              style="opacity:0;position:absolute;z-index:-1" /><span for="Contact-7-Checkbox"
+                              class="form-checkbox-label text-size-small form w-form-label">I accept the <a href="#"
+                                class="text-style-link form">Terms</a></span>
+                          </label></div><input type="submit" data-wait="Please wait..."
+                          id="w-node-_86340416-322b-1561-8215-993243d2bed2-fb483a87"
+                          data-w-id="86340416-322b-1561-8215-993243d2bed2" style="opacity:0"
+                          class="button form w-button" value="Submit" />
+                      </form>
+                      <div class="form-message-success-wrapper w-form-done">
+                        <div class="form-message-success">
+                          <div class="success-text">Thank you! Your submission has been received!</div>
+                        </div>
+                      </div>
+                      <div class="form-message-error-wrapper w-form-fail">
+                        <div class="form-message-error-st">
+                          <div class="error-text">Oops! Something went wrong while submitting the form.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contact-image-wrapper">
+                    <div
+                      data-poster-url="https://cdn.prod.website-files.com/678fef3c81e293bbfb483a1b%2F679cd3e85b032a6719405edd_4253261-uhd_3840_2160_25fps-poster-00001.jpg"
+                      data-video-urls="https://cdn.prod.website-files.com/678fef3c81e293bbfb483a1b%2F679cd3e85b032a6719405edd_4253261-uhd_3840_2160_25fps-transcode.mp4,https://cdn.prod.website-files.com/678fef3c81e293bbfb483a1b%2F679cd3e85b032a6719405edd_4253261-uhd_3840_2160_25fps-transcode.webm"
+                      data-autoplay="true" data-loop="true" data-wf-ignore="true"
+                      data-w-id="3d93009d-8c46-38cd-7ebc-eeaaa58c149a" style="opacity:0"
+                      class="background-video w-background-video w-background-video-atom"><video
+                        id="3d93009d-8c46-38cd-7ebc-eeaaa58c149a-video" autoplay="" loop=""
+                        style="background-image:url(&quot;https://cdn.prod.website-files.com/678fef3c81e293bbfb483a1b%2F679cd3e85b032a6719405edd_4253261-uhd_3840_2160_25fps-poster-00001.jpg&quot;)"
+                        muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+                        <source
+                          src="https://cdn.prod.website-files.com/678fef3c81e293bbfb483a1b%2F679cd3e85b032a6719405edd_4253261-uhd_3840_2160_25fps-transcode.mp4"
+                          data-wf-ignore="true" />
+                        <source
+                          src="https://cdn.prod.website-files.com/678fef3c81e293bbfb483a1b%2F679cd3e85b032a6719405edd_4253261-uhd_3840_2160_25fps-transcode.webm"
+                          data-wf-ignore="true" />
+                      </video></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer-component background-color-alternative">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-vertical padding-xxlarge">
+              <div class="padding-bottom padding-large">
+                <div class="w-layout-grid footer-top-wrapper">
+                  <div data-w-id="f323ef17-65d8-ff6e-d877-fd553b860d08" style="opacity:0" class="footer-left-wrapper"><a
+                      href="#" class="footer-logo-link w-nav-brand"><img loading="lazy" src="images/frame-20177.svg"
+                        alt="" class="footer-logo" /></a>
+                    <div class="spacer-small"></div>
+                    <div>Join our newsletter to stay up to date on features and releases.</div>
+                    <div class="spacer-small"></div>
+                    <div class="footer-form-block w-form">
+                      <form id="email-form" name="email-form" data-name="Email Form" method="get" class="footer-form"
+                        data-wf-page-id="678fef3c81e293bbfb483a87"
+                        data-wf-element-id="f323ef17-65d8-ff6e-d877-fd553b860d10"><input class="form-input w-input"
+                          maxlength="256" name="email-2" data-name="Email 2" placeholder="Enter your email" type="email"
+                          id="email-2" required="" /><input type="submit" data-wait="Please wait..."
+                          class="button is-secondary is-small footer w-button" value="Subscribe" /></form>
+                      <div class="text-size-tiny footer">By subscribing you agree to with our <a href="#"><span>Privacy
+                            Policy</span></a> and provide consent to receive updates from our company.</div>
+                      <div class="form-message-success-wrapper w-form-done">
+                        <div class="form-message-success">
+                          <div>Thank you! Your submission has been received!</div>
+                        </div>
+                      </div>
+                      <div class="form-message-error-wrapper w-form-fail">
+                        <div class="form-message-error-st">
+                          <div>Oops! Something went wrong while submitting the form.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-w-id="f323ef17-65d8-ff6e-d877-fd553b860d21" style="opacity:0"
+                    class="w-layout-grid footer16_menu-wrapper">
+                    <div class="footer-link-column">
+                      <div class="text-weight-semibold footer">Page Section Links</div>
+                      <div class="spacer-xsmall"></div>
+                      <div class="footer-link-list"><a href="#Services" class="footer-link">Services</a><a href="#Team"
+                          class="footer-link">Team</a><a href="#Testimonials" class="footer-link">Testimonials</a><a
+                          href="#FAQs" class="footer-link">FAQs</a><a href="#Contact" class="footer-link">Contact</a>
+                      </div>
+                    </div>
+                    <div class="footer-link-column">
+                      <div class="text-weight-semibold footer">Utility Pages</div>
+                      <div class="spacer-xsmall"></div>
+                      <div class="footer-link-list"><a href="/info/license" class="footer-link">License</a><a
+                          href="/info/changelog" class="footer-link">Changelog</a><a href="/info/style-guide"
+                          class="footer-link">Style Guide</a></div>
+                    </div>
+                    <div class="footer-link-column">
+                      <div class="text-weight-semibold footer">Follow us</div>
+                      <div class="spacer-xsmall"></div>
+                      <div class="footer-link-list"><a href="https://www.facebook.com/" target="_blank"
+                          class="footer16_social-link w-inline-block">
+                          <div class="icon-embed-xsmall w-embed"><svg width="100%" height="100%" viewBox="0 0 24 24"
+                              fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M22 12.0611C22 6.50451 17.5229 2 12 2C6.47715 2 2 6.50451 2 12.0611C2 17.0828 5.65684 21.2452 10.4375 22V14.9694H7.89844V12.0611H10.4375V9.84452C10.4375 7.32296 11.9305 5.93012 14.2146 5.93012C15.3088 5.93012 16.4531 6.12663 16.4531 6.12663V8.60261H15.1922C13.95 8.60261 13.5625 9.37822 13.5625 10.1739V12.0611H16.3359L15.8926 14.9694H13.5625V22C18.3432 21.2452 22 17.083 22 12.0611Z"
+                                fill="CurrentColor" />
+                            </svg></div>
+                          <div>Facebook</div>
+                        </a><a href="https://www.instagram.com/" target="_blank"
+                          class="footer16_social-link w-inline-block">
+                          <div class="icon-embed-xsmall w-embed"><svg width="100%" height="100%" viewBox="0 0 24 24"
+                              fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M16 3H8C5.23858 3 3 5.23858 3 8V16C3 18.7614 5.23858 21 8 21H16C18.7614 21 21 18.7614 21 16V8C21 5.23858 18.7614 3 16 3ZM19.25 16C19.2445 17.7926 17.7926 19.2445 16 19.25H8C6.20735 19.2445 4.75549 17.7926 4.75 16V8C4.75549 6.20735 6.20735 4.75549 8 4.75H16C17.7926 4.75549 19.2445 6.20735 19.25 8V16ZM16.75 8.25C17.3023 8.25 17.75 7.80228 17.75 7.25C17.75 6.69772 17.3023 6.25 16.75 6.25C16.1977 6.25 15.75 6.69772 15.75 7.25C15.75 7.80228 16.1977 8.25 16.75 8.25ZM12 7.5C9.51472 7.5 7.5 9.51472 7.5 12C7.5 14.4853 9.51472 16.5 12 16.5C14.4853 16.5 16.5 14.4853 16.5 12C16.5027 10.8057 16.0294 9.65957 15.1849 8.81508C14.3404 7.97059 13.1943 7.49734 12 7.5ZM9.25 12C9.25 13.5188 10.4812 14.75 12 14.75C13.5188 14.75 14.75 13.5188 14.75 12C14.75 10.4812 13.5188 9.25 12 9.25C10.4812 9.25 9.25 10.4812 9.25 12Z"
+                                fill="CurrentColor" />
+                            </svg></div>
+                          <div>Instagram</div>
+                        </a><a href="https://x.com/?lang=en" target="_blank"
+                          class="footer16_social-link w-inline-block">
+                          <div class="icon-embed-xsmall w-embed"><svg width="100%" height="100%" viewBox="0 0 24 24"
+                              fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M17.1761 4H19.9362L13.9061 10.7774L21 20H15.4456L11.0951 14.4066L6.11723 20H3.35544L9.80517 12.7508L3 4H8.69545L12.6279 9.11262L17.1761 4ZM16.2073 18.3754H17.7368L7.86441 5.53928H6.2232L16.2073 18.3754Z"
+                                fill="CurrentColor" />
+                            </svg></div>
+                          <div>X</div>
+                        </a><a href="https://www.linkedin.com/" target="_blank"
+                          class="footer16_social-link w-inline-block">
+                          <div class="icon-embed-xsmall w-embed"><svg width="100%" height="100%" viewBox="0 0 24 24"
+                              fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4.5 3C3.67157 3 3 3.67157 3 4.5V19.5C3 20.3284 3.67157 21 4.5 21H19.5C20.3284 21 21 20.3284 21 19.5V4.5C21 3.67157 20.3284 3 19.5 3H4.5ZM8.52076 7.00272C8.52639 7.95897 7.81061 8.54819 6.96123 8.54397C6.16107 8.53975 5.46357 7.90272 5.46779 7.00413C5.47201 6.15897 6.13998 5.47975 7.00764 5.49944C7.88795 5.51913 8.52639 6.1646 8.52076 7.00272ZM12.2797 9.76176H9.75971H9.7583V18.3216H12.4217V18.1219C12.4217 17.742 12.4214 17.362 12.4211 16.9819V16.9818V16.9816V16.9815V16.9812C12.4203 15.9674 12.4194 14.9532 12.4246 13.9397C12.426 13.6936 12.4372 13.4377 12.5005 13.2028C12.7381 12.3253 13.5271 11.7586 14.4074 11.8979C14.9727 11.9864 15.3467 12.3141 15.5042 12.8471C15.6013 13.1803 15.6449 13.5389 15.6491 13.8863C15.6605 14.9339 15.6589 15.9815 15.6573 17.0292V17.0294C15.6567 17.3992 15.6561 17.769 15.6561 18.1388V18.3202H18.328V18.1149C18.328 17.6629 18.3278 17.211 18.3275 16.7591V16.759V16.7588C18.327 15.6293 18.3264 14.5001 18.3294 13.3702C18.3308 12.8597 18.276 12.3563 18.1508 11.8627C17.9638 11.1286 17.5771 10.5211 16.9485 10.0824C16.5027 9.77019 16.0133 9.5691 15.4663 9.5466C15.404 9.54401 15.3412 9.54062 15.2781 9.53721L15.2781 9.53721L15.2781 9.53721C14.9984 9.52209 14.7141 9.50673 14.4467 9.56066C13.6817 9.71394 13.0096 10.0641 12.5019 10.6814C12.4429 10.7522 12.3852 10.8241 12.2991 10.9314L12.2991 10.9315L12.2797 10.9557V9.76176ZM5.68164 18.3244H8.33242V9.76733H5.68164V18.3244Z"
+                                fill="CurrentColor" />
+                            </svg></div>
+                          <div>LinkedIn</div>
+                        </a><a href="https://www.youtube.com/" target="_blank"
+                          class="footer16_social-link w-inline-block">
+                          <div class="icon-embed-xsmall w-embed"><svg width="100%" height="100%" viewBox="0 0 24 24"
+                              fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M20.5686 4.77345C21.5163 5.02692 22.2555 5.76903 22.5118 6.71673C23.1821 9.42042 23.1385 14.5321 22.5259 17.278C22.2724 18.2257 21.5303 18.965 20.5826 19.2213C17.9071 19.8831 5.92356 19.8015 3.40294 19.2213C2.45524 18.9678 1.71595 18.2257 1.45966 17.278C0.827391 14.7011 0.871044 9.25144 1.44558 6.73081C1.69905 5.78311 2.44116 5.04382 3.38886 4.78753C6.96561 4.0412 19.2956 4.282 20.5686 4.77345ZM9.86682 8.70227L15.6122 11.9974L9.86682 15.2925V8.70227Z"
+                                fill="CurrentColor" />
+                            </svg></div>
+                          <div>Youtube</div>
+                        </a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="padding-bottom padding-large">
+                <div data-w-id="f323ef17-65d8-ff6e-d877-fd553b860d5a" style="opacity:0" class="footer-image-wrapper">
+                  <img loading="lazy" src="images/frame-20177-1.svg" alt="" class="footer-image" /></div>
+              </div>
+              <div class="line-divider"></div>
+              <div data-w-id="f323ef17-65d8-ff6e-d877-fd553b860d5d" style="opacity:0"
+                class="padding-top padding-medium">
+                <div class="footer-bottom-wrapper">
+                  <div class="footer-credit-text">© 2025 All rights reserved. Made by <a
+                      href="https://webflow.com/templates/designers/kamal-yanni" class="link">Kamal Yanni</a></div>
+                  <div class="w-layout-grid footer-legal-list"><a href="/info/license"
+                      class="footer-legal-link">License</a><a href="/info/changelog"
+                      class="footer-legal-link">Changelog</a><a href="/info/style-guide" class="footer-legal-link">Style
+                      Guide</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </div>
+  <script src="js/jquery.js?site=678fef3c81e293bbfb483a1b" type="text/javascript"></script>
+  <script src="js/webflow.schunk.4a394eb5af8156f2.js" type="text/javascript"></script>
+  <script src="js/webflow.schunk.3bf3c06809a02500.js" type="text/javascript"></script>
+  <script src="js/webflow.schunk.ef7080c06606ca1c.js" type="text/javascript"></script>
+  <script src="js/webflow.schunk.2aef572c50f024ab.js" type="text/javascript"></script>
+  <script src="js/webflow-script.js" type="text/javascript"></script>
+</body>
+
+</html>
